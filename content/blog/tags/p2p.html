@@ -1,0 +1,10 @@
+---
+extends: false
+listable: false
+
+---
+
+{% set titletag = 'p2p' %}
+{% set source = site.content.node_from_relative_path('blog') %}
+{% set walker = source['walk_resources_tagged_with_p2p'] %}
+{% extends "tagged_posts.j2" %}

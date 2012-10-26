@@ -1,0 +1,59 @@
+{% macro render_excerpt(res, class=None) %}
+{% refer to res.url as post %}
+<article {{'class='~class if class }}>
+{# <a href="{{ content_url(res.url) }}">{{ post.image|markdown2|typogrify }}</a> #}
+<span class="top-title"><time class="top" datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">{{ res.meta.created.strftime('%d|%m|%Y') }} </time><span class="ap">por {{ res.meta.author }}.</span></span>
+<h2 class="title-excerpt"><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></h2>
+{% if post.excerpt %}
+	{{ post.excerpt|markdown2|typogrify }}
+{% endif %}
+<a class="more" href="{{ content_url(res.url) }}">Seguir leyendo</a>
+<hr class="post-bottom">
+{% if res.meta.tags %}
+    {{ render_tags(res, 'tags') }}
+{% endif %}
+</article>
+{% endmacro %}
+
+
+{% macro render_tags(res, class=None) -%}
+<ul class="tags clear meta-post">
+{% for tag in res.tags %}
+<li>
+    <a class="small" href="{{ content_url('blog/tags/'~tag.slug~'.html') }}">
+        {{ tag.name }}
+    </a>
+</li>
+{% endfor %}
+</ul>
+{% endmacro %}
+
+
+{% macro render_nav(menu, cls=None) -%}
+{% if menu -%}
+<nav {{'class='~cls if cls }}>
+    <ul>
+        {% for item in menu -%}
+        {% set active = False -%}
+        {% if item.type == 'page' -%}
+            {% set active = (resource.url ==
+                site.content.resource_from_relative_path(item.url).url) -%}
+        {% else -%}
+            {% set active = (node ==
+                site.content.node_from_relative_path(item.url)) -%}
+        {%- endif %}
+        {% set classes = ['button', 'white'] -%}
+        {% do classes.append('active') if active -%}
+        {% do classes.append(item.css_class) if item.css_class -%}
+        <li>
+            <a title="{{ item.description }}"
+                class="{{ classes|join(' ') }}"
+                href="{{ content_url(item.url) }}">
+                {{ item.name }}
+            </a>
+        </li>
+        {%- endfor %}
+    </ul>
+</nav>
+{%- endif %}
+{%- endmacro %}

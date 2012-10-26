@@ -1,0 +1,20 @@
+{% extends "base.j2" %}
+
+{% block main %}
+<section class="archives">
+<h1 class="tag title">Artículos etiquetados con '{{ titletag }}'</h1>
+<div class="posts clear">
+<ul>
+{% for resource in walker() -%}
+<li><span class="archive-title"><a href="{{ content_url(resource.url) }}">{{ resource.meta.title }}</a></span>
+<span class="meta-post"><time class="inline" datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">{{ resource.meta.created.strftime('%d|%m|%Y') }}</time>, por <span class="ap inline">{{ resource.meta.author }}</span></span>{#
+
+{% if resource.meta.tags %}
+    {{ render_tags(resource, 'tags') }}
+{% endif %}
+
+#}</li>
+{%- endfor %}
+</ul>
+</section>
+{% endblock %}

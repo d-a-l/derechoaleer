@@ -1,0 +1,452 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+:focus {
+    outline: 0;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+/* === header === */
+
+#barra-negra-logo {
+    background-color: black;
+    height: 80px;
+    margin-top: 80px;
+}
+
+#header-container {
+    position: relative;
+    margin: 0 auto;
+    width: 1038px;
+}
+
+#logo-title {
+}
+#logo-title img{
+    position: absolute;
+    top: -70px;
+    border: 0 none;
+}
+
+#dal-title {
+    color: white;
+    font-size: 17px;
+    line-height: 22px;
+    margin: 0 0 0 197px;
+    padding: 7px 0 0;
+    width: 650px;
+    font-style: normal;
+}
+
+#site-name {
+    display: inline;
+/*    font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif',Georgia,Serif; */
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+/* ========= HTML en general ========= */
+
+body {
+  font-family: EBGaramond, Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6em;
+  background-color: #fff;
+  color: #000;
+}
+
+article h3 {
+ font-size: 19px;
+ text-decoration: underline;
+ margin-top: 2em;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, p {
+ margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong, mark {
+}
+ul, ol {
+ padding-left: 1em;
+}
+
+pre, code {
+    font-family: "Bitstream Vera Sans Mono","Courier New",monospace;
+    font-size: 14px;
+}
+
+/* ========= LAYOUT ========= */
+
+.content {
+  width: 640px;
+  margin: 0 auto;
+}
+
+
+.content .listing, article.post { /* primer articulo */
+  margin-top: 80px;
+}
+
+section.archives {
+  margin-top: 80px;
+}
+
+.archive-title {
+    display: block;
+    margin: 11px 0 -7px;
+}
+
+
+/* ========= HEADER ========= */
+
+header .main_nav ul{
+    background-color: white;
+    list-style-type: none;
+    padding: 0.4em 0 0;
+    text-align: center;
+}
+
+header .main_nav ul li {
+    display: inline;
+    font-size: 1.9em;
+    font-style: italic;
+    margin: 0 0.1em;
+}
+
+
+header .main_nav ul li:before {
+}
+
+header .main_nav ul li:first-child:before {
+}
+
+
+header h1 {
+}
+
+/* ========= CONTENIDO html ========= */
+
+h4, h5 {
+}
+
+b, strong, mark {
+}
+
+a {
+}
+
+p a {
+}
+
+p a:before {
+ /* content: "☞"; */
+}
+
+a:hover {
+}
+
+p a.img { }
+p a.img:before { content: ""; }
+a.img:hover { color: inherit; }
+
+p {
+/* -webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto; */
+
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 1em;
+}
+
+blockquote.big-quote {
+/*
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+*/
+    color: red;
+    font-size: 23px;
+    font-style: italic;
+    line-height: 29px;
+    margin-bottom: 2em;
+}
+
+blockquote.big-quote p {
+    font-size: 23px;
+    line-height: 29px;
+}
+
+span.dquo {
+    color: inherit;
+    display: inline;
+    font-size: inherit;
+    text-align: left;
+}
+
+blockquote.big-quote .autor-quote, blockquote.big-quote .aq { /* es el autor de la cita! */
+    font-size: 18px;
+    text-align: right;
+    display: block;
+    color: black;
+}
+
+.autor-quote-nombre, .an {
+}
+
+img {
+}
+
+.img-float {
+  float: left;
+  margin: 7px 31px 0 0;
+}
+
+iframe {
+  margin: 0 40px 2em 40px;
+}
+
+iframe.i640 {
+  margin: 0 0 3em 0;
+}
+
+.epigrafe, .ep {
+    font-size: 13px;
+    line-height: 1.4em;
+    margin: -1em 0 1em 0;
+    font-style: italic;
+}
+
+article > span, article > div {
+}
+
+/* ========= NODOS titulos  ========= */
+
+h1, h2 {
+}
+
+.title-excerpt, h1.title {
+  font-family: 'Nimbus Sans L', Helvetica, Arial, sans-serif;
+  font-size: 41px;
+  letter-spacing: -3px;
+  line-height: 39px;
+}
+
+h1.tag.title {
+  font-family: 'Nimbus Sans L', Helvetica, Arial, sans-serif;
+  font-size: 31px;
+  letter-spacing: -2px;
+  line-height: 31px;
+}
+
+.title-excerpt a, h1.title a{
+ text-decoration: none;
+ color: black;
+}
+
+/* ========= NODOS elementos  ========= */
+
+article.excerpt {
+  margin-bottom: 90px;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.meta-post, .top-title {
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+
+.top-title {
+  margin-bottom: -2px;
+  display: block;
+}
+
+time {
+}
+
+span.author-post, span.ap {
+}
+
+
+ul.tags {
+    list-style-type: none;
+    margin: 0 0 2em;
+    padding: 0;
+}
+
+ul.tags li {
+    display: inline;
+    margin: 0 6px 0 3px;
+}
+
+ul.tags li:before { 
+/*    content: "#"; */
+}
+
+ul.tags li a{
+  /* color: #b1293e; */
+ margin: 0 0 0 -3px;
+ color: 
+}
+
+.paginator {
+    display: block;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.paginator a {
+ margin: 0 5px;
+}
+
+a.prevlist:after {
+ content: " »";
+}
+
+a.nextlist:before {
+ content: "«";
+}
+
+
+time:before { /* content: "~ "; */}
+time:after { }
+
+time .dc {
+    font-size: 0.75em;
+}
+
+span.lk {
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 20px;
+    display: block;
+    color: #666;
+}
+
+.separador, .sep, .sp {
+    display: block;
+    margin: 2em auto 80px;
+    text-align: center;
+}
+
+.more {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    margin-top: 2em;
+}
+
+a.more:after {
+ content: " »";
+}
+
+.post_nav {
+ margin-top: 80px;
+}
+
+nav.post_nav p{
+  font-style: italic;
+  margin: 0 0 7px 0;
+}
+
+nav.post_nav p.anterior:before {
+   content: "· ";
+}
+
+nav.post_nav p.siguiente:before {
+   content: "· ";
+}
+
+nav.post_nav p.volver:before {
+   content: "· ";
+}
+
+nav.post_nav p a:before{
+ content: "";
+}
+
+
+
+/* ========= FOOTER  ========= */
+footer{
+  font-size: 17px;
+  color: #ccc;
+}
+footer p {
+    font-style: italic;
+    text-align: center; 
+    text-indent: 0;
+    padding: 1em 0;
+    margin: 3em 0 0 0;
+    background-color: black;
+    color: white;
+}
+
+footer p a {
+ /* border-bottom: 2px dotted #555; */
+ color: white;
+}
+
+footer p a:before {
+
+}
+
+/* ESPECIALES */
+
+#rms {
+    font-size: 13px !important;
+    line-height: 16px !important;
+}
+
+#copyleft p {font-family: 'Courier New',courier,'Andale Mono','Nimbus Mono L',monospace;font-size: 56px;line-height: 45px;}
+#copyleft p a { color: black;text-decoration: none;}
+#copyleft p a:hover {color: white;}
+#copyleft p a:hover b {color: black;}
+#copyleft p a b {font-weight: normal;}

@@ -1,0 +1,10 @@
+---
+extends: false
+listable: false
+
+---
+
+{% set titletag = 'Acceso a la informaci&#243;n' %}
+{% set source = site.content.node_from_relative_path('blog') %}
+{% set walker = source['walk_resources_tagged_with_acceso-a-la-informacion'] %}
+{% extends "tagged_posts.j2" %}

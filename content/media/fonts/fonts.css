@@ -1,0 +1,49 @@
+/* https://github.com/georgd/EB-Garamond/tree/master/web */
+
+@font-face {
+  font-family: "EBGaramond"; /* "EBG12-Re"; */
+  src:  url('EBGaramond12-Regular.eot') format('eot'),  
+  	url('EBGaramond12-Regular.woff') format('woff');
+  font-style: normal;
+  }
+
+/* ugly bold :( */
+/*
+@font-face {
+  font-family: "EBGaramond";
+  src:  url('EBGaramond12-Bold.eot') format('eot'),  
+  	url('EBGaramond12-Bold.woff') format('woff');
+  font-weight: bold;
+  }
+*/
+
+/* bold as italic! */
+@font-face {
+  font-family: "EBGaramond"; /* "EBG12-It"; */
+  src:  url('EBGaramond12-Italic.eot') format('eot'),  
+  	url('EBGaramond12-Italic.woff') format('woff');
+  font-weight: bold;
+  }
+
+/*
+@font-face {
+  font-family: "EBG12-SC";
+  src:  url('EBGaramond12-SC.eot') format('eot'),  
+  	url('EBGaramond12-SC.woff') format('woff');
+  }
+*/
+
+@font-face {
+  font-family: "EBGaramond"; /* "EBG12-It"; */
+  src:  url('EBGaramond12-Italic.eot') format('eot'),  
+  	url('EBGaramond12-Italic.woff') format('woff');
+  font-style: italic;
+  }
+
+/*
+@font-face {
+  font-family: "EBGInit";
+  src:  url('EBGaramond-Initials.eot') format('eot'),  
+        url('EBGaramond-Initials.woff') format('woff');
+}
+*/

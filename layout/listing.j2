@@ -1,0 +1,18 @@
+{% extends "base.j2" %}
+{% from "macros.j2" import render_excerpt with context  %}
+{% block main %}
+{% block page_title %}<h1 class="title">{{ resource.meta.title }}</h1>{% endblock %}
+
+<div class="listing clear">
+{# for res in resource.node.walk_resources_sorted_by_time() #}
+{% for res in resource.page.posts %}
+    {{ render_excerpt(res, 'excerpt') }}
+{% endfor %}
+
+<div class="paginator">
+{% if resource.page.next %}<a class="nextlist" href="{{ resource.page.next.resource.url }}">Anteriores</a>{% endif %}
+{% if resource.page.previous %}<a class="prevlist" href="{{ resource.page.previous.resource.url }}">Siguientes</a>{% endif %}
+</div>
+
+</div>
+{% endblock %}
