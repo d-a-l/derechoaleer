@@ -17,9 +17,8 @@ type: story
 status: 1
 format: 3
 ---
-
 {% mark excerpt -%}
-{% if _markings_ is defined -%}
+{% from "media_macros.j2" import render_media with context %}
 > "La grabé por convicción y por pedido expreso del general Perón, aún sabiendo que sería más recordado por la marchita que por los tangos que he grabado"
 >
 > <span>Hugo del Carril</span>
@@ -28,14 +27,10 @@ format: 3
 
 En **1949** [Hugo del Carril](http://es.wikipedia.org/wiki/Hugo_del_Carril "wikipedia: Hugo del Carril") grabó la versión más famosa de la [Marcha Peronista](http://es.wikipedia.org/wiki/Marcha_Peronista "wikipedia: Marcha Peronista"). Si bien hay [desacuerdos sobre su verdadera autoría](http://www.todotango.com/spanish/biblioteca/CRONICAS/la_marcha.asp), la marcha figura como de *autor anónimo*. Esta circunstancia, junto con el tiempo transcurrido desde la grabación (50 años), colocan este registro completamente dentro del **dominio público** desde el año 2000. *"Los muchachos peronistas"* de Hugo del Carril, podía ser **distribuída, difundida y copiada libremente**, y por eso la [encontramos alojada](http://es.wikipedia.org/wiki/Archivo:Marcha_peronista.ogg "Marcha_peronista.ogg"), en el repositorio multimedia de Wikipedia, que sólo puede albergar obras libres o en dominio público.
 
-<div markdown="1">
-<audio controls="controls"> <source src="http://derechoaleer.org/derechoaleer/files/marcha_peronista_hugo_del_carril.ogg">
-<div markdown="1" style="border: 1px solid gray; font-size: 80%; padding: 1em;">
-Su navegador no soporta el elemento <samp>"audio"</samp> para reproducir el audio embebido en html ([Actualizate](http://www.mozilla-europe.org/es/firefox/) a Firefox 3.5!).
-Podés [descargar el audio desde aquí](http://upload.wikimedia.org/wikipedia/commons/c/ce/Marcha_peronista.ogg).
-</div>
-</source></audio>
-</div>
+{{ render_media('/media/files/marcha_peronista_hugo_del_carril.ogg', 'audio') }}
+
+{# http://upload.wikimedia.org/wikipedia/commons/c/ce/Marcha_peronista.ogg) #}
+
 Aprovechemos a escucharla, mientras podamos...
 
 ### Poder indebido
@@ -45,34 +40,7 @@ Hace unos meses hubo cierta controversia, con idas y vueltas por tribunales, sob
 **Insólita arbitrariedad**, que en su momento [comentaban en Vía Libre](http://www.vialibre.org.ar/2009/06/03/hugo-del-carril-h-el-desperonizador/ "Hugo del Carril (h), el desperonizador"): *"nos aporta una instancia que merece figurar en un manual acerca de por qué los derechos de autor y derechos conexos deben ser estrictamente limitados: el Sr. Hugo del Carril (h) parece estar convencido de que su carácter de heredero del emblemático intérprete de la Marcha Peronista le otorga el derecho de decidir quién es «suficientemente peronista» como para usar esa versión de la marcha, y quién no.*
 
 Pero más insólito fue el [fallo del juzgado electoral de Servini de Cubría](http://www.criticadigital.com/index.php?secc=nota&nid=24302 "Crítica Digital: Néstor se quedó sin la marcha peronista"), que si bien autorizó a todos los frentes justicialistas a usar los símbolos de la liturgia peronista, **le prohibió** al *kirchnerismo* usar dicha clásica versión de este himno popular, por *usufructuar indebidamente de la canción cuyos derechos comerciales están bajo propiedad de su familia* (?). Luego, para terminar de hundirse en las brumosas arenas legales de la propiedad intelectual, un terreno evidentemente inexplorado para la mayoría de los jueces y abogados, [la jueza manifestó](http://www.cronicasindical.com.ar/actualidad/2009/06junio09/080609/080609marcha.html "Crónica Sindical: El Kirchnerismo si paga podrá usar la marcha por Hugo del Carril") que *el PJ podrá utilizar la grabación si paga los derechos ya que se trata de «un tema comercial»* ([de un disco de 1949??](http://www.bea.org.ar/2009/06/de-quien-es-la-marchita/)).
-
-
-
-{%- endif %}
 {%- endmark %}
-> "La grabé por convicción y por pedido expreso del general Perón, aún sabiendo que sería más recordado por la marchita que por los tangos que he grabado"
->
-> <span>Hugo del Carril</span>
-
-En **1949** [Hugo del Carril](http://es.wikipedia.org/wiki/Hugo_del_Carril "wikipedia: Hugo del Carril") grabó la versión más famosa de la [Marcha Peronista](http://es.wikipedia.org/wiki/Marcha_Peronista "wikipedia: Marcha Peronista"). Si bien hay [desacuerdos sobre su verdadera autoría](http://www.todotango.com/spanish/biblioteca/CRONICAS/la_marcha.asp), la marcha figura como de *autor anónimo*. Esta circunstancia, junto con el tiempo transcurrido desde la grabación (50 años), colocan este registro completamente dentro del **dominio público** desde el año 2000. *"Los muchachos peronistas"* de Hugo del Carril, podía ser **distribuída, difundida y copiada libremente**, y por eso la [encontramos alojada](http://es.wikipedia.org/wiki/Archivo:Marcha_peronista.ogg "Marcha_peronista.ogg"), en el repositorio multimedia de Wikipedia, que sólo puede albergar obras libres o en dominio público.
-
-<div markdown="1">
-<audio controls="controls" autoplay="true"> <!-- <source src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Marcha_peronista.ogg"> --> <source src="http://derechoaleer.org/derechoaleer/files/marcha_peronista_hugo_del_carril.ogg">
-<div markdown="1" style="border: 1px solid gray; font-size: 80%; padding: 1em;">
-Su navegador no soporta el elemento <samp>"audio"</samp> para reproducir el audio embebido en html ([Actualizate](http://www.mozilla-europe.org/es/firefox/) a Firefox 3.5!).
-Podés [descargar el audio desde aquí](http://upload.wikimedia.org/wikipedia/commons/c/ce/Marcha_peronista.ogg).
-</div>
-</source></audio>
-</div>
-Aprovechemos a escucharla, mientras podamos...
-
-### Poder indebido
-
-Hace unos meses hubo cierta controversia, con idas y vueltas por tribunales, sobre el uso de *la marchita* por parte de las **distintas corrientes internas del peronismo**. El *hijo* de Hugo del Carril, al parecer ferviente *anti-kirchnerista* reclamaba su "derecho" a que esa versión de la marcha cantada por *su padre*, no fuese usada en aquellos actos políticos, que a *Huguito* no le cayeran simpáticos.
-
-**Insólita arbitrariedad**, que en su momento [comentaban en Vía Libre](http://www.vialibre.org.ar/2009/06/03/hugo-del-carril-h-el-desperonizador/ "Hugo del Carril (h), el desperonizador"): *"nos aporta una instancia que merece figurar en un manual acerca de por qué los derechos de autor y derechos conexos deben ser estrictamente limitados: el Sr. Hugo del Carril (h) parece estar convencido de que su carácter de heredero del emblemático intérprete de la Marcha Peronista le otorga el derecho de decidir quién es «suficientemente peronista» como para usar esa versión de la marcha, y quién no.*
-
-Pero más insólito fue el [fallo del juzgado electoral de Servini de Cubría](http://www.criticadigital.com/index.php?secc=nota&nid=24302 "Crítica Digital: Néstor se quedó sin la marcha peronista"), que si bien autorizó a todos los frentes justicialistas a usar los símbolos de la liturgia peronista, **le prohibió** al *kirchnerismo* usar dicha clásica versión de este himno popular, por *usufructuar indebidamente de la canción cuyos derechos comerciales están bajo propiedad de su familia* (?). Luego, para terminar de hundirse en las brumosas arenas legales de la propiedad intelectual, un terreno evidentemente inexplorado para la mayoría de los jueces y abogados, [la jueza manifestó](http://www.cronicasindical.com.ar/actualidad/2009/06junio09/080609/080609marcha.html "Crónica Sindical: El Kirchnerismo si paga podrá usar la marcha por Hugo del Carril") que *el PJ podrá utilizar la grabación si paga los derechos ya que se trata de «un tema comercial»* ([de un disco de 1949??](http://www.bea.org.ar/2009/06/de-quien-es-la-marchita/)).
 
 ![image](/media/img/disco_los_muchachos_peronistas.jpg "el 'tema comercial' que refiere la jueza")
 
@@ -86,8 +54,7 @@ Esta **claudicación** de los diputados y senadores ante el *lobby* de las disco
 
 ### Combatiendo al capital
 
-</p>
-[![image](/media/img/zafra.jpg)](http://www.sonymusic.com.ar/default.asp?a=11/26/2009+5:33:27+AM&Op=19&P=7621552&frm=1&ACCION=PRENSA&Com_Cod=1&Int_Codigo=487&Gac_Cod=9811)Curiosamente, Sony [acaba de reeditar](http://www.sonymusic.com.ar/default.asp?a=11/26/2009+5:33:27+AM&Op=19&P=7621552&frm=1&ACCION=PRENSA&Com_Cod=1&Int_Codigo=487&Gac_Cod=9811) el disco debut de **Mercedes Sosa**, "La voz de la zafra", aquella grabación *amenazada* por la tierra de nadie de lo público, mencionada en el proyecto.
+<span class="img-float">[![image](/media/img/zafra.jpg)](http://www.sonymusic.com.ar/default.asp?a=11/26/2009+5:33:27+AM&Op=19&P=7621552&frm=1&ACCION=PRENSA&Com_Cod=1&Int_Codigo=487&Gac_Cod=9811)</span>Curiosamente, Sony [acaba de reeditar](http://www.sonymusic.com.ar/default.asp?a=11/26/2009+5:33:27+AM&Op=19&P=7621552&frm=1&ACCION=PRENSA&Com_Cod=1&Int_Codigo=487&Gac_Cod=9811) el disco debut de **Mercedes Sosa**, "La voz de la zafra", aquella grabación *amenazada* por la tierra de nadie de lo público, mencionada en el proyecto.
 
 Aclaremos que esto no implica que la **multinacional Sony no pudiese relanzarlo igual**, sólo que con el fonograma en dominio público, algún hipotético sello de la competencia podría hipotéticamente editarlo también, (a partir de alguna vieja copia, porque los *masters* originales supongo que estarán bien guardados) y rasguñarle algunas marginales monedas del negocio a [Sony Music Entertainment](http://es.wikipedia.org/wiki/Sony_Music_Entertainment).
 
@@ -97,7 +64,6 @@ Sin embargo, [otros que trabajan voluntariamente](http://es.wikipedia.org/wiki/C
 
 ### Adiós al uso libre de la marcha...
 
-</p>
 ![image](/media/img/adios_a_la_marcha.jpg)
 
 Finalmente el *kirchnerismo*, hace meses **víctima** de la arbitrariedad de los derechos conexos de los intérpretes —y de insólitas interpretaciones judiciales— termina impulsando y aprobando una ley, que **entrega a la explotación privada** de las discográficas un patrimonio que **ya era público**, y nada menos que la Marcha Peronista de Hugo de Carril, **por varios años más hasta 2020**.
@@ -106,6 +72,7 @@ Toda una paradoja peronista...
 
 
 * * * * *
+<div class="notas" markdown="1">
 
 #### Notas
 
@@ -124,6 +91,6 @@ Origen de la imágenes: [La Maga](http://lamagaprensa.blogspot.com/2009/07/la-cu
 
 -   Gracias por los enlaces a [Partido Pirata](http://partido-pirata.blogspot.com/2009/11/el-dia-que-los-peronistas.html), [librecultivo](http://librecultivo.org.ar/news.php?readmore=313), [musicalike](http://www.musicalike.com.ar/2009/11/nos-van-a-seguir-robando-la-cultura-nomas/), [Vía Libre](http://www.vialibre.org.ar/2009/11/29/contra-el-monopolio-cultural/) y [**muchas gracias a Facundo Garcia de Página/12!!**](http://www.pagina12.com.ar/diario/suplementos/espectaculos/17-16165-2009-11-29.html)
 
-
+</div>
 
 

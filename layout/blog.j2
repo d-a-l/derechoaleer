@@ -1,4 +1,5 @@
 {% extends "base.j2" %}
+{% from "macros.j2" import render_tags with context  %}
 
 {% block main -%}
 <article class="post">
@@ -8,18 +9,20 @@
     </a>
 </h1>
 
-{% filter markdown2|typogrify -%}
 {% mark post -%}
+{% filter markdown2|typogrify -%}
 {% block post -%}{%- endblock %}
-{%- endmark %}
 {%- endfilter %}
+{%- endmark %}
 
+<div class="meta-bottom">
 <p class="meta-post"><span class="lk">Enlace Permanente: <a href="http://derechoaleer.info{{ content_url(resource.url) }}">http://derechoaleer.info{{ content_url(resource.url) }}</a></span></p>
 <p class="meta-post">Publicado por <span class="ap inline">{{ resource.meta.author }}</span>, el <time class="inline" datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">{{ resource.meta.created.strftime('%d|%m|%Y') }}</time></p>
 <hr class="post-bottom">
 {% if resource.meta.tags %}
     {{ render_tags(resource, 'tags') }}
 {% endif %}
+</div>
 </article>
 
 <nav class="post_nav">

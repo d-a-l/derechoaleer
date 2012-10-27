@@ -86,7 +86,7 @@ body {
   color: #000;
 }
 
-article h3 {
+article h3, article h4{
  font-size: 19px;
  text-decoration: underline;
  margin-top: 2em;
@@ -182,6 +182,12 @@ p a.img { }
 p a.img:before { content: ""; }
 a.img:hover { color: inherit; }
 
+li {
+   margin-bottom: 1em;
+   font-size: 1em;
+   line-height: 1.5em;
+}
+
 p {
 /* -webkit-hyphens: auto;
 -moz-hyphens: auto;
@@ -240,7 +246,7 @@ img {
 }
 
 iframe {
-  margin: 0 40px 2em 40px;
+  /* margin: 0 40px 2em 40px; */
 }
 
 iframe.i640 {
@@ -255,6 +261,29 @@ iframe.i640 {
 }
 
 article > span, article > div {
+}
+
+.notas p, .notas li {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.lista-corta li {
+  margin-bottom: 0.3em;
+}
+
+hr {
+    margin: 5em auto;
+    width: 39%;
+}
+
+hr.post-bottom {
+    margin: 0 0 9px;
+    width: 100%;
+}
+
+.meta-bottom {
+  margin: 3em 0 5em;
 }
 
 /* ========= NODOS titulos  ========= */

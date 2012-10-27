@@ -19,7 +19,8 @@ format: 3
 ---
 
 {% mark excerpt -%}
-<span class="img-float">[![image](/media/img/latam-small.png)](/blog/2009/09/apunten-sobre-latinoamerica-copyfight.html "Copyfight en Chile")</span>Hace unos meses publicamos [un artículo](/blog/2009/09/apunten-sobre-latinoamerica-copyfight.html "Copyfight en Chile") sobre el debate que estaba (y está) desarrollándose en Chile a partir del tratamiento legislativo de [la nueva Ley de Propiedad Intelectual](http://es.wikipedia.org/wiki/Ley_de_Propiedad_Intelectual_(Chile)#Modificaci.C3.B3n_de_2007_y_Pol.C3.A9mica), impulsada desde el Gobierno (saliente) de Michelle Bachelet.
+{% from "media_macros.j2" import render_media with context %}
+<span class="img-float">[![image](/media/img/latam-small.png)](/blog/2009/09/apunten-sobre-latinoamerica-copyfight.html "Copyfight en Chile")</span>Hace unos meses publicamos [un artículo](/blog/2009/09/apunten-sobre-latinoamerica-copyfight.html "Copyfight en Chile") sobre el debate que estaba (y está) desarrollándose en Chile a partir del tratamiento legislativo de <a href="http://es.wikipedia.org/wiki/Ley_de_Propiedad_Intelectual_(Chile)#Modificaci.C3.B3n_de_2007_y_Pol.C3.A9mica">la nueva Ley de Propiedad Intelectual</a>, impulsada desde el Gobierno (saliente) de Michelle Bachelet.
 
 Un aspecto interesante del proceso es la confluencia de nuevos actores y voces que se han convertido en grupos de presión que canalizan los intereses de los ciudadanos, y abordan el tema de la propiedad intelectual desde nuevas perspectivas: **el acceso al conocimiento, los derechos de los usuarios, la cultura como patrimonio común, la privacidad** etc. Estas voces provienen, como en muchos países que pasan por debates públicos similares, de grupos de usuarios, redes sociales, blogueros, activistas del software libre, y organizaciones de la sociedad civil.
 
@@ -29,7 +30,7 @@ Un aspecto interesante del proceso es la confluencia de nuevos actores y voces q
 
 También, a través de Derechos Digitales es que [Horacio Potel](/blog/2009/04/quema-virtual-de-libros.html "Quema Virtual de Libros"), [Bibliofyl](/blog/2009/09/bibliofyl-una-nueva-biblioteca.html "BiblioFyL, una nueva biblioteca filosófica incendiada"), [el acuerdo CADRA-UBA](/blog/2009/09/debate-sobre-derechos-de-autor-libros-o.html "Debate sobre Derechos de Autor ¿Libros o fotocopias?"), o [las declaraciones de Daniel Link](/blog/2009/11/moscardones-verdes-que-habitan-las.html "Moscardones verdes que habitan las letrinas"), **cruzaron la cordillera** y fueron tratados en el programa [**Conexión Social**](http://www.conexionsocial.cl/), conducido por Paz Peña y Claudio Ruiz, que sale por [AM Radio Tierra](http://www.radiotierra.cl/?q=node/816) de Santiago y por [FM La Radioneta](http://www.laradioneta.cl/) de Valparaiso. El programa puede [escucharse entero en el sitio de Conexión Social](http://www.conexionsocial.cl/node/157). Aquí subimos sólo el segundo bloque sobre Argentina (la emisión es previa al [sobreseimiento](/blog/2009/11/potel-sobreseido.html) de Horacio):
 
-<div><audio controls="controls"><source src="/media/files/conexion_social_17_11_09-2do_bloque.ogg"><div style="border: 1px solid gray; font-size: 85%; font-family: sans-serif; padding: 1em;">Su navegador no soporta el elemento <samp>"audio"</samp> para reproducir el audio en formato abierto ogg, embebido en html5, <a href="http://www.mozilla-europe.org/es/firefox/">¡pasáte a Firefox!</a>), o el audio no está disponible en el servidor en este momento. <a href="/media/files/conexion_social_17_11_09-2do_bloque.ogg">Prueba descargarlo desde aquí</a>.</div></source></audio></div>
+{{ render_media('/media/files/conexion_social_17_11_09-2do_bloque.ogg', 'audio') }}
 
 [**Claudio Ruiz Gallardo**](http://www.quemarlasnaves.net/acerca/) es abogado y director de la ONG Derechos Digitales, (también tiene blog: [*Quemar las Naves*](http://www.quemarlasnaves.net/)), y amablemente accedió a una entrevista de *Derecho a Leer*, que realizamos vía e-mail:
 
@@ -75,6 +76,7 @@ Creo que es un ejemplo interesante de cómo el activismo desde nuestros escritor
 
 
 * * * * *
+<div class="notas" markdown="1">
 
 Hoy hubo [elecciones presidenciales](http://es.wikipedia.org/wiki/Elección_presidencial_de_Chile_(2009)) en Chile. En una época donde ya parece [bastante común](http://criticadigital.com/impresa/index.php?secc=nota&nid=34376) ver a [políticos *progresistas*](http://www.patriciolorente.com.ar/2009/02/05/tu-tambien-filmus/) fuertemente condicionados por los intereses de la *industria cultural* —sector que pareciera congeniar más con la centroizquierda que con la centroderecha, y por donde generalmente se cuela mejor su poder de lobby— es esperanzador escuchar al candidato a presidente de Chile [Marco Enríquez-Ominami](http://es.wikipedia.org/wiki/Marco_Enríquez-Ominami) (progresista, que ademas proviene del mundo del cine) declarando en [un discurso](http://www.tratojustoparatodos.cl/2009/08/19/marco-enriquez-ominami-no-podemos-criminalizar-a-los-jovenes/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+TratoJustoParaTodos+(TRATO+JUSTO+PARA+TODOS)&utm_content=Google+Reader) *"No podemos criminalizar a los jóvenes por tener hambre de cultura y acceder a ella"*.
 
@@ -82,6 +84,4 @@ Hoy hubo [elecciones presidenciales](http://es.wikipedia.org/wiki/Elección_pres
 
 -   Gracias por los enlaces: [**Rebelión**](http://www.rebelion.org/noticia.php?id=97347 "El activismo desde nuestros escritorios no es suficiente para lograr modificaciones normativas reales"), [**Derechos Digitales**](http://www.derechosdigitales.org/2009/12/16/propiedad-intelectual-y-activismo-ciudadano-en-internet/ "Propiedad intelectual y activismo ciudadano en Internet")
 
-
-
-
+</div>
