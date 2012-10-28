@@ -1,5 +1,6 @@
 {% extends "base.j2" %}
 {% from "macros.j2" import render_excerpt with context  %}
+{% import 'embed_media.j2' as embed %} 
 {% block main %}
 {% block page_title %}<h1 class="title">{{ resource.meta.title }}</h1>{% endblock %}
 

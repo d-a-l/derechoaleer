@@ -1,5 +1,6 @@
 {% extends "base.j2" %}
 {% from "macros.j2" import render_tags with context  %}
+{% import 'embed_media.j2' as embed %} 
 
 {% block main -%}
 <article class="post">
@@ -13,6 +14,14 @@
 {% filter markdown2|typogrify -%}
 {% block post -%}{%- endblock %}
 {%- endfilter %}
+{% if self.notas() %}
+<hr>
+<div class="notas">
+{% filter markdown2|typogrify -%}
+{% block notas -%}{%- endblock %}
+{%- endfilter %}
+</div>
+{% endif %}
 {%- endmark %}
 
 <div class="meta-bottom">

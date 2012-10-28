@@ -17,14 +17,6 @@
   }
 */
 
-/* bold as italic! */
-@font-face {
-  font-family: "EBGaramond"; /* "EBG12-It"; */
-  src:  url('EBGaramond12-Italic.eot') format('eot'),  
-  	url('EBGaramond12-Italic.woff') format('woff');
-  font-weight: bold;
-  }
-
 /*
 @font-face {
   font-family: "EBG12-SC";

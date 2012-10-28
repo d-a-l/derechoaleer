@@ -16,11 +16,13 @@ format: 3
 ---
 
 {% mark excerpt -%}
-<p>
-<object width="560" height="340">
-<param name="movie" value="http://www.youtube.com/v/bO_AunQePnI&hl=es&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/bO_AunQePnI&hl=es&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed>
-</object>
-</p>
+{% from "media_macros.j2" import render_media with context %}
+<div>{{ render_media('bO_AunQePnI', 'youtube') }}</div>
+
+
+* * * * *
+
+
 *"Durante una semana, Barcelona **capital mundial** de la cultura compartida."*
 
 *"Más de **200 participantes**, personajes de todos los ámbitos de la cultura nacional e internacional participan en una gala y una semana de eventos de todo tipo."*
@@ -46,18 +48,11 @@ Para saber de qué se tratan los [oXcars](http://oxcars09.exgae.net/), visitar e
 
 * * * * *
 
+
 #### Actualizacion
 
-En Red Panal [nos anuncian](http://www.redpanal.org/2009/12/21/los-oxcars-completos/) que se puede ver la pelicula de los oxcars 2009!</a>
+En Red Panal [nos anuncian](http://www.redpanal.org/2009/12/21/los-oxcars-completos/) que se puede ver [la pelicula de los oxcars 2009!](http://vimeo.com/7859968)</a>
 
-<p>
-<object width="400" height="225">
-<param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=7859968&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=7859968&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="225"></embed>
-</object>
-[oXcars 2009, La película](http://vimeo.com/7859968) from [eXgae](http://vimeo.com/user1441193) on [Vimeo](http://vimeo.com).
-
-
+<div>{{ render_media('7859968', 'vimeo') }}</div>
 
 {%- endmark %}
-
-

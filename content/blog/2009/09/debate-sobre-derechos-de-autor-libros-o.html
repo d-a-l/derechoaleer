@@ -18,8 +18,9 @@ nid: 98
 type: story
 status: 1
 format: 5
+default_block:
 ---
-
+{% block post %}
 {% mark excerpt -%}
 *"La [Universidad de Buenos Aires](http://uba.ar) firmó [un convenio](http://www.forofyl.com.ar/viewtopic.php?f=108&t=5143&start=0&st=0&sk=t&sd=a) a principios de este año mediante el cual [se compromete](http://www.lanacion.com.ar/nota.asp?nota_id=1127847) a pagar un monto anual por estudiante a [CADRA](http://www.cadra.org.ar/index.cgi), una entidad que regula el fotocopiado de libros. ¿Qué legitimidad tiene CADRA? ¿Qué dicen las editoriales y los autores? ¿Cómo garantizar una educación pública y gratuita sin avasallar los Derechos de Autor?"*
 
@@ -27,25 +28,17 @@ Este viernes 25 de septiembre a las 19 hs, en el Aula del CEFyL de la Facultad d
 
 Más info [aquí](http://www.vialibre.org.ar/2009/09/22/derechos-de-autor-¿libros-o-fotocopias/).
 
-
-
 {%- endmark %}
+{% endblock %}
 
-* * * * *
-
+{% block notas %}
 #### Actualización
 
 Un registro completo de audio de la charla a continuación:
 
-<audio controls="controls"> <source src="/media/files/charla-cadra-uba.ogg">
+{{ embed.audio('/media/files/charla-cadra-uba.ogg', 'Charla CADRA-UBA') }}
 
-<div markdown="1" style="border: 1px solid gray; font-size: 80%; padding: 1em;">
-Su navegador no soporta el elemento <samp>"audio"</samp> para reproducir el audio embebido en html ([Actualizate](http://www.mozilla-europe.org/es/firefox/) a Firefox 3.5!).
-Podés [descargar el audio desde aquí](/media/files/charla-cadra-uba.ogg).
-</div>
-</source></audio>
-</p>
-**Enlaces sobre el convenio CADRA - UBA**
+#### Enlaces sobre el convenio CADRA - UBA
 
 -   [Texto del convenio CADRA / UBA](http://arsewacodos.googlepages.com/CONVENIOUBACADRA.doc).
 -   ["Per annum"](http://linkillo.blogspot.com/2009/05/per-annum.html), artículo de Daniel Link publicado también en [Perfil](http://www.perfil.com/contenidos/2009/05/22/noticia_0046.html).
@@ -58,8 +51,6 @@ Podés [descargar el audio desde aquí](/media/files/charla-cadra-uba.ogg).
 
 * * * * *
 
--   Muchas gracias al autor de la grabación!
+-   *Muchas gracias al autor de la grabación!*
 
-
-
-
+{% endblock %}

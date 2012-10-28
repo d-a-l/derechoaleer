@@ -90,6 +90,8 @@ article h3, article h4{
  font-size: 19px;
  text-decoration: underline;
  margin-top: 2em;
+ font-style: italic;
+ font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -158,6 +160,15 @@ header h1 {
 }
 
 /* ========= CONTENIDO html ========= */
+
+article strong, article b {
+     text-decoration: underline;
+     font-weight: normal;
+}
+
+em > strong {
+   font-weight: normal;
+}
 
 h4, h5 {
 }
