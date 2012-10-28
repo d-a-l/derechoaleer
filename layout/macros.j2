@@ -1,6 +1,6 @@
 {% macro render_excerpt(res, class=None) %}
 {% refer to res.url as post %}
-{% from "media_macros.j2" import render_media %}
+{# {% import 'embed_media.j2' as embed %} #}
 <article {{'class='~class if class }}>
 {# <a href="{{ content_url(res.url) }}">{{ post.image|markdown2|typogrify }}</a> #}
 <span class="top-title"><time class="top" datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">{{ res.meta.created.strftime('%d|%m|%Y') }} </time><span class="ap">por {{ res.meta.author }}.</span></span>

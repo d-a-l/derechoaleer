@@ -18,7 +18,7 @@ status: 1
 format: 3
 ---
 {% mark excerpt -%}
-{% from "media_macros.j2" import render_media with context %}
+{% import 'embed_media.j2' as embed %}
 > "La grabé por convicción y por pedido expreso del general Perón, aún sabiendo que sería más recordado por la marchita que por los tangos que he grabado"
 >
 > <span>Hugo del Carril</span>
@@ -27,7 +27,7 @@ format: 3
 
 En **1949** [Hugo del Carril](http://es.wikipedia.org/wiki/Hugo_del_Carril "wikipedia: Hugo del Carril") grabó la versión más famosa de la [Marcha Peronista](http://es.wikipedia.org/wiki/Marcha_Peronista "wikipedia: Marcha Peronista"). Si bien hay [desacuerdos sobre su verdadera autoría](http://www.todotango.com/spanish/biblioteca/CRONICAS/la_marcha.asp), la marcha figura como de *autor anónimo*. Esta circunstancia, junto con el tiempo transcurrido desde la grabación (50 años), colocan este registro completamente dentro del **dominio público** desde el año 2000. *"Los muchachos peronistas"* de Hugo del Carril, podía ser **distribuída, difundida y copiada libremente**, y por eso la [encontramos alojada](http://es.wikipedia.org/wiki/Archivo:Marcha_peronista.ogg "Marcha_peronista.ogg"), en el repositorio multimedia de Wikipedia, que sólo puede albergar obras libres o en dominio público.
 
-{{ render_media('/media/files/marcha_peronista_hugo_del_carril.ogg', 'audio') }}
+{{ embed.audio('/media/files/marcha_peronista_hugo_del_carril.ogg', 'La marcha peronista cantada por Hugo del Carril') }}
 
 {# http://upload.wikimedia.org/wikipedia/commons/c/ce/Marcha_peronista.ogg) #}
 
@@ -92,5 +92,3 @@ Origen de la imágenes: [La Maga](http://lamagaprensa.blogspot.com/2009/07/la-cu
 -   Gracias por los enlaces a [Partido Pirata](http://partido-pirata.blogspot.com/2009/11/el-dia-que-los-peronistas.html), [librecultivo](http://librecultivo.org.ar/news.php?readmore=313), [musicalike](http://www.musicalike.com.ar/2009/11/nos-van-a-seguir-robando-la-cultura-nomas/), [Vía Libre](http://www.vialibre.org.ar/2009/11/29/contra-el-monopolio-cultural/) y [**muchas gracias a Facundo Garcia de Página/12!!**](http://www.pagina12.com.ar/diario/suplementos/espectaculos/17-16165-2009-11-29.html)
 
 </div>
-
-

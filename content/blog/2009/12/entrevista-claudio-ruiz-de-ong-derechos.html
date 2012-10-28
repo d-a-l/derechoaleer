@@ -17,9 +17,8 @@ type: story
 status: 1
 format: 3
 ---
-
 {% mark excerpt -%}
-{% from "media_macros.j2" import render_media with context %}
+{% import 'embed_media.j2' as embed %}
 <span class="img-float">[![image](/media/img/latam-small.png)](/blog/2009/09/apunten-sobre-latinoamerica-copyfight.html "Copyfight en Chile")</span>Hace unos meses publicamos [un artículo](/blog/2009/09/apunten-sobre-latinoamerica-copyfight.html "Copyfight en Chile") sobre el debate que estaba (y está) desarrollándose en Chile a partir del tratamiento legislativo de <a href="http://es.wikipedia.org/wiki/Ley_de_Propiedad_Intelectual_(Chile)#Modificaci.C3.B3n_de_2007_y_Pol.C3.A9mica">la nueva Ley de Propiedad Intelectual</a>, impulsada desde el Gobierno (saliente) de Michelle Bachelet.
 
 Un aspecto interesante del proceso es la confluencia de nuevos actores y voces que se han convertido en grupos de presión que canalizan los intereses de los ciudadanos, y abordan el tema de la propiedad intelectual desde nuevas perspectivas: **el acceso al conocimiento, los derechos de los usuarios, la cultura como patrimonio común, la privacidad** etc. Estas voces provienen, como en muchos países que pasan por debates públicos similares, de grupos de usuarios, redes sociales, blogueros, activistas del software libre, y organizaciones de la sociedad civil.
@@ -30,7 +29,7 @@ Un aspecto interesante del proceso es la confluencia de nuevos actores y voces q
 
 También, a través de Derechos Digitales es que [Horacio Potel](/blog/2009/04/quema-virtual-de-libros.html "Quema Virtual de Libros"), [Bibliofyl](/blog/2009/09/bibliofyl-una-nueva-biblioteca.html "BiblioFyL, una nueva biblioteca filosófica incendiada"), [el acuerdo CADRA-UBA](/blog/2009/09/debate-sobre-derechos-de-autor-libros-o.html "Debate sobre Derechos de Autor ¿Libros o fotocopias?"), o [las declaraciones de Daniel Link](/blog/2009/11/moscardones-verdes-que-habitan-las.html "Moscardones verdes que habitan las letrinas"), **cruzaron la cordillera** y fueron tratados en el programa [**Conexión Social**](http://www.conexionsocial.cl/), conducido por Paz Peña y Claudio Ruiz, que sale por [AM Radio Tierra](http://www.radiotierra.cl/?q=node/816) de Santiago y por [FM La Radioneta](http://www.laradioneta.cl/) de Valparaiso. El programa puede [escucharse entero en el sitio de Conexión Social](http://www.conexionsocial.cl/node/157). Aquí subimos sólo el segundo bloque sobre Argentina (la emisión es previa al [sobreseimiento](/blog/2009/11/potel-sobreseido.html) de Horacio):
 
-{{ render_media('/media/files/conexion_social_17_11_09-2do_bloque.ogg', 'audio') }}
+{{ embed.audio('/media/files/conexion_social_17_11_09-2do_bloque.ogg', 'Conexión Social, programa sobre Argentina') }}
 
 [**Claudio Ruiz Gallardo**](http://www.quemarlasnaves.net/acerca/) es abogado y director de la ONG Derechos Digitales, (también tiene blog: [*Quemar las Naves*](http://www.quemarlasnaves.net/)), y amablemente accedió a una entrevista de *Derecho a Leer*, que realizamos vía e-mail:
 

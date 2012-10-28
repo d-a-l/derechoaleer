@@ -14,11 +14,13 @@ nid: 95
 type: story
 status: 1
 format: 3
+default_block:
 ---
-
+{% block post %}
 {% mark excerpt -%}
-{% from "media_macros.j2" import render_media with context %}
-<div>{{ render_media('t2Y6eQy39e0', 'youtube') }}</div>
+{% import 'embed_media.j2' as embed %}
+
+{{ embed.youtube('t2Y6eQy39e0', 'El "Repro-Fürer"') }}
 
 
 * * * * *
@@ -42,11 +44,9 @@ format: 3
 
 **Führer:** Título elegido por Hitler después de que en Alemania se estableciera el "Führerprinzip", el Principio del Liderazgo, según el cual el Líder era el único responsable de concentrar todos los poderes en su persona, encarnar el Estado y ser jefe del partido único, en este caso el Partido Nazi. <sup>[5](#fu5)</sup>
 {%- endmark %}
+{% endblock %}
 
-
-* * * * *
-
-<div class="notas" markdown="1">
+{% block notas %}
 #### Notas
 
 -   <span id="fu1">[1]</span> Tercera acepción dada en el [Diccionario de la Lengua Española de la RAE](http://buscon.rae.es/draeI/SrvltConsulta?TIPO_BUS=3&LEMA=fotocopia), vigésima segunda edición. Las dos primeras son, *"Perteneciente o relativo a las acciones o caracteres de las personas, desde el punto de vista de la bondad o malicia"* y *"Que no pertenece al campo de los sentidos, por ser de la apreciación del entendimiento o de la conciencia"*.
@@ -73,7 +73,4 @@ format: 3
 -   ["Brasil: Subsidio Público y Acceso al Conocimiento"](/blog/2009/10/brasil-subsidio-publico-y-acceso-al.html) o cómo en la Universidad de São Paulo hacen punta y defienden los derechos de los estudiantes.
 -   ["No more money for you, bastards"](/blog/2009/10/no-more-money-for-you-bastards.html) o cómo los estudiantes del norte también se cansan de la estafa editorial.
 
-</div>
-
-
-
+{% endblock %}

@@ -248,6 +248,18 @@ blockquote.big-quote .autor-quote, blockquote.big-quote .aq { /* es el autor de 
 .autor-quote-nombre, .an {
 }
 
+.descargar {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    margin: -3px 0 2em;
+    text-decoration: none;
+}
+
+.descargar:before { 
+    content: " — "; 
+}
+
 img {
 }
 
@@ -489,4 +501,4 @@ footer p a:before {
 #copyleft p a { color: black;text-decoration: none;}
 #copyleft p a:hover {color: white;}
 #copyleft p a:hover b {color: black;}
-#copyleft p a b {font-weight: normal;}
+#copyleft p a b {font-weight: normal; text-decoration: none;}

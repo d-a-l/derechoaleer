@@ -14,10 +14,9 @@ type: story
 status: 1
 format: 3
 ---
-
 {% mark excerpt -%}
-{% from "media_macros.j2" import render_media with context %}
-<div>{{ render_media('bO_AunQePnI', 'youtube') }}</div>
+{% import 'embed_media.j2' as embed %}
+{{ embed.youtube('bO_AunQePnI', 'Oxcars') }}
 
 
 * * * * *
@@ -53,6 +52,7 @@ Para saber de qué se tratan los [oXcars](http://oxcars09.exgae.net/), visitar e
 
 En Red Panal [nos anuncian](http://www.redpanal.org/2009/12/21/los-oxcars-completos/) que se puede ver [la pelicula de los oxcars 2009!](http://vimeo.com/7859968)</a>
 
-<div>{{ render_media('7859968', 'vimeo') }}</div>
+{{ embed.vimeo('7859968', 'Oxcars 2009') }}
+
 
 {%- endmark %}

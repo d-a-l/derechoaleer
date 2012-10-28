@@ -18,7 +18,6 @@ type: story
 status: 1
 format: 5
 ---
-{% from "media_macros.j2" import render_media with context %}
 {% mark excerpt -%}
 [![image](http://farm3.static.flickr.com/2607/4149969092_5d051d7ed7.jpg)](http://miguelrep.blogspot.com/2009/10/seguiremos-informando.html)
 
@@ -35,13 +34,11 @@ Gracias por el ["Instituto Nacional del Libro"](http://www1.hcdn.gov.ar/proyecto
 
 [![image](http://farm3.static.flickr.com/2671/4148445578_38630f6830_o.png)](http://www.flickr.com/photos/derechoaleer/4148445578/)
 
-<p>
 Porque tal como lo indican las leyes por las que el futuro ente autárquico promete **velar**...
 > b) velar por el cumplimiento de la ley 25.446 y de todas aquellas normas que fomenten la producción y lectura del libro argentino;
 
 ...actividades tan fraudulentas como: **el acceso y manipulación de material bibliográfico requerido por los investigadores, el acceso a material de estudio por los estudiantes, o la preservación y difusión de libros por parte de las bibliotecas**, entre otras varias inmoralidades semejantes que los lectores podrían acomenter contra los libros (y ni hablemos de compartirlos por [P2P](http://es.wikipedia.org/wiki/Peer-to-peer "Wikipedia: Redes Peer to Peer")): **son delito**.
 
-<p>
 Y un **delito grave**, reprimido nada menos que con el **código penal**. No hay excepciones al monopolio comercial sobre las obras. Y tampoco se anda con ambigüedades en cuestiones [«retrográficas»](/blog/2009/11/moscardones-verdes-que-habitan-las.html "Moscardones verdes que habitan las letrinas"):
 > h) proteger el libro de la reprografía ilegal y la falsificación editorial;
 
@@ -50,11 +47,9 @@ Y un **delito grave**, reprimido nada menos que con el **código penal**. No hay
 {%- endmark %}
 ### No hay tu tía
 
-<p>
 Hace unos meses en el Colegio Público de Abogados de la Capital Federal, en la apertura de la Conferencia-Taller *"El Acceso a la Información en el contexto de la Ley 11.723: Una mirada desde las bibliotecas"*<sup>[2](#biblio2)</sup>, donde participaban asociaciones de bibliotecarios ([ACBJ](http://www.acbj.org.ar/ "Asociación Civil de Bibliotecarios Jurídicos"), [ABGRA](http://www.abgra.org.ar/index.html "Asociación de Bibliotecarios Graduados de la República Argentina")), el **Dr. Alejandro Tomás Butler** señalaba de manera contundente:
 > Agrego que a los problemas que se le presentan a las Bibliotecas [...] no puedo dejar de mencionarles el principal escollo que involucra a todos los habitantes del país, porque ningún habitante legalmente debe, sin la autorización de los autores y de los editores, reproducir obras protegidas por Derechos de Autor ni total, ni parcialmente y sin importar el propósito patrimonial o extrapatrimonial perseguido, ya que el derecho de reproducción que se le reconoce a los autores esta concebido en términos de un **monopolio legal absoluto**, porque no admite excepciones de ningún tipo y con el agravante de que si lo hace, esa conducta queda tipificada como un **delito penal**.
 
-<p>
 Y terminaba diciendo:
 > En síntesis, en nuestro derecho **no hay tu tía**: el juez, el legislador, el funcionario, el docente, el investigador, el profesional, el estudiante, el intelectual si ha osado reproducir o reproduce sin autorización y aunque sea una hoja de una obra intelectual protegida ha delinquido o delinque.
 
@@ -66,11 +61,9 @@ Y terminaba diciendo:
 
 Por más que la ley de "fomento" del libro –ley por la cual el Instituto deberá velar– incluya artículos tan loables como *"Promover el acceso igualitario al libro, bibliotecas públicas, populares, escolares, universitarias y sindicales"* y otros tantos enunciados igual de vistosos, [la cruda realidad ha marcado](/blog/2009/09/bibliofyl-una-nueva-biblioteca.html) que tales nobles llamamientos al interés común lamentablemente son sólo *letra muerta*.
 
-<p>
 El *lobby* que impulsa esta clase de leyes persigue un objetivo central: **la criminalización** de todo aquel que se atreva a [**romper el monopolio**](http://krigan.wordpress.com/2009/11/10/requiem-por-un-monopolio/ "Requiem por un monopolio"). El objetivo de la [25.446](http://www.cadra.org.ar/upload/Ley_25446.pdf) fue incorporar a los editores como **sujetos legales con derecho a hacer demandas sobre los copiadores desobedientes**, (hasta entonces, una prerrogativa exclusiva de los autores):
 > ARTICULO 23. – El editor podrá perseguir civil y penalmente a quienes reproduzcan ilegítimamente su edición, pudiendo estar en juicio, incluso en acciones penales como querellante. Esta acción es independiente de la que le corresponde al autor.
 
-<p>
 Y ampliar las herramientas represivas sobre las fotocopias:
 > ARTICULO 29. – Quienes reproduzcan en forma facsimilar un libro o partes de él, sin autorización de su autor y de su editor, serán sancionados con multa de pesos setecientos cincuenta a diez mil.
 
@@ -123,7 +116,8 @@ Por si fuera poco **tanta gente del lado equivocado**, ahora nos encontramos [es
 
 * * * * *
 
-<div>{{ render_media('11123704', 'vimeo') }}</div>
+{{ embed.vimeo('11123704', 'El Repro Führer') }}
+
 
 Gracias a [Partido Pirata que lo subió a Vimeo!](http://partido-pirata.blogspot.com/2010/04/las-caidas-de-las-parodias-de-la-caida.html)
 
