@@ -61,7 +61,7 @@ table {
 
 #dal-title {
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 22px;
     margin: 0 0 0 197px;
     padding: 7px 0 0;
@@ -80,18 +80,10 @@ table {
 
 body {
   font-family: Noticia, Georgia, serif;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 1.6em;
   background-color: #fff;
   color: #000;
-}
-
-article h3, article h4{
- font-size: 19px;
- text-decoration: underline;
- margin-top: 2em;
- font-style: italic;
- font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -161,9 +153,30 @@ header h1 {
 
 /* ========= CONTENIDO html ========= */
 
+article h3, article h4{
+ font-size: 16px;
+ margin-top: 2em;
+ font-weight: bold;
+}
+
+article p, article li, article blockquote{
+ text-align: justify;
+ hyphens: auto;
+ -webkit-hyphens: auto;
+ -moz-hyphens: auto;
+}
+
+article p, article li, article blockquote {
+  line-height: 1.7em;
+}
+
 article strong, article b {
-     text-decoration: underline;
-     font-weight: normal;
+   /*  text-decoration: underline;
+     font-weight: normal; */
+}
+
+article.post {
+  color: #222;
 }
 
 em > strong {
@@ -196,7 +209,7 @@ a.img:hover { color: inherit; }
 li {
    margin-bottom: 1em;
    font-size: 1em;
-   line-height: 1.5em;
+   line-height: 1.6em;
 }
 
 p {
@@ -205,7 +218,7 @@ p {
 hyphens: auto; */
 
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
 blockquote {
