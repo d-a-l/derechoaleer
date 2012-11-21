@@ -1,0 +1,10 @@
+---
+extends: false
+listable: false
+
+---
+
+{% set titletag = 'Dependencia tecnol&#243;gica' %}
+{% set source = site.content.node_from_relative_path('blog') %}
+{% set walker = source['walk_resources_tagged_with_dependencia-tecnologica'] %}
+{% extends "tagged_posts.j2" %}

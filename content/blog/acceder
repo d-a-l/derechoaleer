@@ -1,0 +1,44 @@
+---
+title: 'Acceder'
+author: admin
+created: !!timestamp 2010-01-09 09:40:11
+comments: 0
+nid: 131
+order: 65
+type: page
+status: 1
+format: 4
+---
+
+{% mark excerpt -%}
+uid != 0 ) { ?\>
+<p>
+Estás accediendo al sitio como: <b>
+<?php print $user->
+name; ?\></b>
+</p>
+Roles:
+
+<ul>
+<?php
+foreach($user->
+roles as $rol) { print "
+<li>
+".$rol."
+</li>
+"; } ?\>
+</ul>
+<?php }else{ ?>
+<p>
+Ingresá usuario y contraseña a continuación:
+<?php } ?>
+{# <textarea cols="60" rows="20">
+<?php /* print_r( $user ); */ ?>
+</textarea> #}
+
+
+{%- endmark %}
+
+
+
+

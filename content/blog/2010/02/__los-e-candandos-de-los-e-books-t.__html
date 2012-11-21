@@ -1,0 +1,36 @@
+---
+title: 'Los ""e-candandos"" de los ""e-books"" tampoco se comparten'
+author: derechoaleer
+created: !!timestamp 2010-02-20 17:25:47
+tags: 
+    - Kindle & iPad
+
+comments: 2
+nid: 171
+order: 103
+type: story
+status: 0
+format: 2
+---
+
+{% mark excerpt -%}
+> Nick Bogaty de Adobe ha declarado en Computer World que Apple no usará el sistema DRM de Adobe en su nueva tienda de libros iBookStore.
+
+> En el artículo comentan que Apple seguramente usaría su sistema FairPlay, el mismo que puso en marcha para iTunes en su momento.
+
+> De ser así, los libros comprados en iBookStore sólo funcionarían en dispositivos de Apple (iPad, iPhone, iPod Touch…) del mismo modo que los libros de Amazon sólo funcionan en Kindle.
+
+<p>
+"[**Apple no usará el DRM de Adobe**](http://libros.soybits.com/web/apple-no-usara-el-drm-de-adobe)" en Soybits
+<li>
+Lectores con software libre y sin DRM
+</li>
+<li>
+Amazon 1984, o lo que pasa cuando el usuario no controla realmente sus propios archivos
+
+
+{%- endmark %}
+
+
+
+

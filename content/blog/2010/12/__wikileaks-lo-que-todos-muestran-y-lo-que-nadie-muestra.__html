@@ -1,0 +1,72 @@
+---
+title: 'WikiLeaks, lo que todos muestran y lo que nadie muestra'
+author: scann
+created: !!timestamp 2010-12-04 02:37:51
+tags: 
+    - Medios
+    - Wikileaks
+    - Libertad de expresión
+    - Acceso a la información
+
+comments: 2
+nid: 273
+order: 205
+type: story
+status: 1
+format: 2
+---
+
+{% mark excerpt -%}
+<p>
+<object width="446" height="326">
+<param name="movie" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf"></param><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="wmode" value="transparent"></param><param name="bgColor" value="#ffffff"></param> <param name="flashvars" value="vu=http://video.ted.com/talks/dynamic/JulianAssange_2010G-medium.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/JulianAssange-2010G.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=918&introDuration=15330&adDuration=4000&postAdDuration=830&adKeys=talk=julian_assange_why_the_world_needs_wikileaks;year=2010;theme=media_that_matters;theme=new_on_ted_com;theme=war_and_peace;theme=a_taste_of_tedglobal_2010;event=TEDGlobal+2010;&preAdTag=tconf.ted/embed;tile=1;sz=512x288;" /><embed src="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" pluginspace="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" bgColor="#ffffff" width="446" height="326" allowFullScreen="true" allowScriptAccess="always" flashvars="vu=http://video.ted.com/talks/dynamic/JulianAssange_2010G-medium.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/JulianAssange-2010G.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=918&introDuration=15330&adDuration=4000&postAdDuration=830&adKeys=talk=julian_assange_why_the_world_needs_wikileaks;year=2010;theme=media_that_matters;theme=new_on_ted_com;theme=war_and_peace;theme=a_taste_of_tedglobal_2010;event=TEDGlobal+2010;"></embed>
+</object>
+(los subtítulos en castellano se activan desde "view subtitles")
+
+<p>
+[**Alain Badiou**](http://duckduckgo.com/?q=Alain+Badiou), en su artículo ["Fragmentos de un diario público sobre la guerra de Estados Unidos en Irak"](http://books.google.com.ar/books?id=HcLviqclE88C&printsec=frontcover&dq=badiou+%22filosofia+del+presente%22&source=bl&ots=cn0T554UDe&sig=_epjZrNEawakr2uLsztUTR3tYs4&hl=es&ei=DKX5TI2DMc-p8AaQooXlCQ&sa=X&oi=book_result&ct=result&resnum=5&ved=0CC8Q6AEwBA#v=onepage&q&f=false) mencionaba que en tiempos de guerra se puede hablar de tres tipos de representación de imágenes de una guerra; **aquellas que se muestran por ambos lados, aquellas que se muestran por uno solo y aquellas que no son mostradas por ninguno de los dos lados**. Y daba un excelente ejemplo de esa situación cuando afirmaba:
+> Así es como las imágenes de la destrucción del ejército iraquí y de su huida a través del desierto, en la primera Guerra del Golfo, en un primer momento no fueron mostradas por nadie. Los iraquíes no tenían ningún deseo de exhibir la amplitud de su derrota. Pero las imágenes de los cuerpos estallados por las bombas explosivas o carbonizados por las bombas incendiarias eran tan atroces que los estadounidenses no querían que circularan de ningún modo.
+
+El mismo ejemplo de esto que mencionaba Badiou puede volverse análogo para la información: **la que todos muestran, la que uno solo decide mostrar y la que nadie muestra**. Lo interesante es que, en todos los casos, se necesita de la voluntad de las personas —más que de los Estados— para decidir poner en circulación esa información o esas imágenes.
+
+
+
+{%- endmark %}
+
+{# break #}
+Hasta no hace mucho tiempo atrás, la posibilidad de **hacer circular la información** estaba restringida a quienes tenían los medios para hacerla. Ese paradigma de grandes medios concentrados [que deciden qué hacer y qué no hacer con la información](http://www.arbia.org.ar/nov-detalle.php?nov=649) ha cambiado radicalmente, y el filtrado de información vía Wikileaks, más que la excepción, tiende a ser la norma.
+
+El tema ha dado para que [los más dudosos "especialistas"](http://www.youtube.com/watch?v=OjgpwLtuDok) de las más diversas áreas –desde medios periodísticos hasta seguridad informática– opinen sobre cualquiera de estos puntos: los medios tradicionales vs. los nuevos medios digitales; la libertad de expresión vs. la seguridad nacional; el farandulismo vs. la relevancia; el "modelo anárquico" de la web y su necesidad de leyes que lo regulen; la seguridad informática y, finalmente, pero no por ello menos importante, si Julián Assange es un pederasta o un héroe.
+
+### Otros modos de cercamiento
+
+<p>
+Hay otras formas novedosas de evitar que esa herramienta poderosa que es la información quede en manos de "cualquiera". En su obra El lamento de las imágenes (2002), el artista chileno [Alfredo Jaar](http://es.wikipedia.org/wiki/Alfredo_Jaar) cita un par de acontecimientos elocuentes:
+> II. Kabul, Afganistán, 7 de octubre de 2001.
+
+> Cuando la oscuridad cae sobre Kabul, los bombarderos norteamericanos realizan su primer ataque aéreo contra Afganistán, incluyendo bombas expansivas arrojadas desde aviones B-52 volando a 40.000 pies, y más de 50 misiles crucero. El presidente Bush describió el ataque como una operación contra «blancos cuidadosamente seleccionados» para evitar bajas civiles.
+
+> Poco antes de impulsar el ataque aéreo, el Ministerio de Defensa de los Estados Unidos adquirió los derechos exclusivos de todas las imágenes satelitales de Afganistán y de los países vecinos. Así, la National Imagery y la agencia Maping, una unidad ultrasecreta del Departamento de Inteligencia, subscribieron un contrato exclusivo con la compañía Space Imaging para adquirir todas las imágenes de su satélite Ikonos.
+
+> Aunque sus propios satélites espías eran diez veces más poderosos que cualquier otro en el comercio, el Pentágono defendió la compra de las imágenes del Ikonos como una decisión de negocios que «les proveería de una capacidad superior».
+
+> El acuerdo produjo también un efectivo blanqueo de la operación, evitando que los medios occidentales pudieran ver los efectos del bombardeo, eliminando la posibilidad de una verificación independiente o de refutar las afirmaciones gubernamentales.
+
+> Las organizaciones de noticias en los Estados Unidos y en Europa fueron obligadas a utilizar imágenes de archivo para acompañar sus reportes. El CEO de la compañía Space Imaging aseguró «Hemos vendido todas las imágenes disponibles».
+
+> Nada fue dejado a la vista.
+
+### ¿Nuevos derechos?
+
+<p>
+La discusión más importante por cierto trató de ser evitada a toda costa. Luego de que Hillary Clinton saliera a declarar que había que, palabras más o menos, "matar al mensajero", muchos periodistas y opinólogos comenzaron a preguntarse sobre **la seguridad de los sistemas informáticos y "el problema de Internet"**. En una [entrevista](http://marencoche.wordpress.com/2010/12/01/seguridad-informatica/) que le hicieron a **Enrique Chaparro** en el programa [**"La Mar en Coche"**](http://marencoche.wordpress.com/), en FM La Tribu, Chapa decía:
+> A mi juicio, es el caso más característico de fallas de seguridad informática: alguien, de adentro, que transfirió los 250 mil documentos. Hay que tener en cuenta que a la red donde están esos documentos, los departamentos de Estado tienen acceso alrededor de 2.000 personas, funcionarios del departamento de Estado, embajadores, cónsules. Aquí no parece haber en principio ningún operativo para romper la seguridad instalada en el sistema, sino simplemente alguien que por vaya uno a saber qué razón, tomó estos documentos, los empezó a bajar y se los transfirió a Wikileaks. Creo que es algún tipo de operación interna, vaya a uno saber por qué intereses de interna menor, qué cabeza están esperando que ruede, y de esa forma hicieron circular este volumen de información, que tiene cosas valiosas.
+
+Esta parte de la discusión parece haberse perdido entre el mar de preguntas que abrió el caso Wikileaks. Y ha aparecido ahora la necesidad imperante del fantasma de la *regulación* de Internet: **el problema no es la filtración de datos interna, sino que exista una herramienta que permite la puesta en circulación alternativa de esta información**. De modo que, tal como advierten los especialistas, hay que crear <q>nuevas leyes para regular este espacio</q>, pretendiendo así omitir lo que hay de verdadero en la discusión: no existen nuevos delitos o nuevos derechos, sino que son simplemente **los viejos derechos y los viejos delitos que ahora pueden ser ejercidos con nuevas herramientas**. El derecho a la privacidad o a la libertad de expresión no han cambiado ni un ápice sus principios, simplemente que el primero puede ser violado de manera más sistemática con las nuevas tecnologías y el segundo puede ser puesto en práctica por mayor cantidad de gente con las nuevas tecnologías. **Los derechos –y los delitos–, en su esencia, siguen siendo los mismos** que eran antaño.
+
+La discusión que proponen los medios tradicionales sobre Wikileaks termina volviéndose vacía: la libertad de prensa es de quienes pueden pagar por esa libertad. Muchos –entre ellos, **Richard Stallman**– consideraron que el tratamiento farandulesco que le había dado la prensa tradicional a los cables liberados, [hacían dudar sobre los beneficios reales que había tenido para la Internet el caso Wikileaks](http://www.revistaenie.clarin.com/ideas/politica-economia/Richard_Stallman-WikiLeaks_0_382761949.html). Sin embargo, frente a planteos como ése, la disyuntiva es de carácter ético: esconder la información y así evitar supuestos daños mayores –la temida regulación de Internet–, o dar a conocer la información y **defender la herramienta que posibilita que esa información circule**. Y en esa disyuntiva ética, cada cual deberá poder optar por lo que le parezca más razonable.
+
+
+
+
+

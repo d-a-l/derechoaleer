@@ -1,0 +1,25 @@
+---
+title: 'Quién no haya tenido, por lo menos una vez'
+author: admin
+created: !!timestamp 2010-01-27 07:15:20
+tags: 
+    - Bienes Comunes
+
+comments: 2
+nid: 141
+order: 73
+type: story
+status: 0
+format: 2
+---
+
+{% mark excerpt -%}
+"...De la efervescencia desesperanzadora de aquellas representaciones vacías de significado nace y se nutre el deseo de superar la insuficiente, absurda distinción entre lo bello y lo feo, lo verda- dero y lo falso, el bien y el mal. Y como sea que del grado de resistencia que esta idea superior encuentre depende el avance más o menos seguro del espíritu hacia un mundo que, al fin, resulte habitable, es comprensible que el surrealismo no tema adoptar el dogma de la rebelión absoluta, de la insumisión total, del sabotaje a toda regla y que tenga sus esperanzas únicamente puestas en la violencia. El acto surrealista más puro consiste en bajar a la calle, revolver en mano, y disparar al azar, mientras a uno le dejen, contra la multitud. Quién no haya tenido, por lo menos una vez, el deseo de acabar de esta manera con el despreciable sistema de envilecimiento y cretinización imperante, merece un sitio entre la multitud, merece tener el vientre a tiro de revolver."
+
+
+
+{%- endmark %}
+
+
+
+

@@ -1,0 +1,30 @@
+---
+title: 'Paranoia'
+author: admin
+created: !!timestamp 2010-02-27 04:14:06
+tags: 
+    - Vigilancia
+
+comments: 2
+nid: 181
+order: 113
+type: story
+status: 0
+format: 2
+---
+
+{% mark excerpt -%}
+> La paranoia es un término psiquiátrico que describe un estado de salud mental caracterizado por la presencia de delirios autorreferentes. [...] Más específicamente, puede referirse a un tipo de sensaciones angustiantes, como la de estar siendo perseguido por fuerzas incontrolables.
+
+Asi se describe la paranoia en wikipedia, dicho esto vale la pena aclarar una cosa importante: que uno sea paranoico no significa que no lo estén siguiendo realmente, en efecto, uno puede ser paranoico y lo pueden estar espiando todo el tiempo...
+-   Microsoft http://www.wired.com/threatlevel/2010/02/microsoft-cryptome/ http://www.uberbin.net/archivos/microsoft/lo-que-microsoft-sabe-de-vos-y-le-muestra-a-las-autoridades.php
+-   Google y su puerta trasera http://www.cnn.com/2010/OPINION/01/23/schneier.google.hacking/index.html
+-   yahoo http://www.versvs.net/anotacion/precio-que-yahoo-da-datos-sus-usuarios
+
+
+
+{%- endmark %}
+
+
+
+

@@ -1,0 +1,37 @@
+---
+title: 'Qué son los bienes "no rivales", explicado para niños'
+author: derechoaleer
+created: !!timestamp 2010-02-14 15:15:25
+tags: 
+    - Bienes Comunes
+
+comments: 2
+nid: 165
+order: 97
+type: story
+status: 0
+format: 5
+---
+
+{% mark excerpt -%}{% import 'embed_media.j2' as embed %}
+¿Que son los bienes no rivales? ¿Por que es falaz comparar el robo con la copia? ¿cómo explicarselo a un niño de seis años? ¿Y a un académico que da clases en a universidad? bueno ahi va...
+
+
+
+{{ embed.youtube('IeTybKL1pM4', '') }}
+
+
+Si se desea dar un paso mas en el camino del analisis reflexivo y critico de la llamada "propiedad intelectual", para descubrir cuan falaces son los fundamentos que la sostienen, se puede leer este [ameno artículo](http://www.lorem-ipsum.es/blogs/equilibriosocial/2009/12/bienes-publicos-y-propiedad-intelectual/) que introduce al tema de los bienes no excluibles y los no rivales:
+
+<q>Los bienes públicos se llaman así por ser “no excluibles y no rivales”, es decir, como el faro que se pone en un arrecife, son bienes económicos (el faro evita naufragios, con los costes humanos y materiales que conllevan, y tiene un coste de operación e instalación), pero el servicio que da dicho faro es “no excluible”, porque no puedes evitar que un barco que no pague por el faro lo vea, y por tanto disfrute del servicio, y es “no rival” porque la utilización del faro por un barco no consume el bien en ningún sentido.</q> [Seguir leyendo...](http://www.lorem-ipsum.es/blogs/equilibriosocial/2009/12/bienes-publicos-y-propiedad-intelectual/)
+
+<p>
+El [video](http://www.youtube.com/watch?v=IeTybKL1pM4) lo publicó
+a href="http://questioncopyright.org/minute_memes/cint_release" title="Final Version of "Copying Is Not Theft" Released!"\>Question Copyright</a>. {# http://blog.compartirenlibertad.org/2009/12/copiar-no-es-robo/ #}
+
+
+{%- endmark %}
+
+
+
+

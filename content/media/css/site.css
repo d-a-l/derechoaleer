@@ -98,8 +98,14 @@ ul, ol {
 }
 
 pre, code {
-    font-family: "Bitstream Vera Sans Mono","Courier New",monospace;
-    font-size: 14px;
+    font-family:  "Liberation Mono", "Andale Mono",monospace;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+pre {
+    border: 1px dotted gray;
+    padding: 13px 14px;
 }
 
 /* ========= LAYOUT ========= */
@@ -169,11 +175,72 @@ article p, article li {
 article blockquote p{
   text-align: left;
   hyphens: none;
+ -webkit-hyphens: none;
+ -moz-hyphens: none;
+}
+
+article .big-quote {
+  padding-right: 2em;
+}
+article .big-quote p {
+    hyphens: none;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+
+    font-size: 1.2em;
+    text-align: left;
+}
+
+article .big-quote p > span {
+   display: block;
+   font-size: 13px;
+  /* text-align: right; */
+   font-style: normal;
+}
+
+article .big-quote p > span.dquo {
+   display: inline;
+   font-size: inherit;
+   text-align: inherit;
+   font-style: inherit;
+}
+
+article center {
+    padding: 0.5em;
+    font-size: 14px;
+    margin-bottom: 1em;
+    font-family: "Nimbus Sans L",Helvetica,Arial,Sans-serif;
+    color: #666666;
+}
+
+article p > big {
+    border-bottom: 4px solid #DDDDDD;
+    border-top: 4px solid #DDDDDD;
+    color: #666666;
+    display: block;
+    float: left;
+    font-family: "Nimbus Sans L",Helvetica,Arial,Sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0.4em 1.5em 1em 0;
+    padding: 0.9em;
+    width: 272px;
+}
+
+
+article sup {
+    font-size: 0.7em;
+    margin-left: 0.3em;
+    vertical-align: text-top;
 }
 
 article strong, article b {
    /*  text-decoration: underline;
      font-weight: normal; */
+}
+
+article q {
+   font-style:italic;
 }
 
 article.post {
@@ -273,6 +340,40 @@ blockquote.big-quote .autor-quote, blockquote.big-quote .aq { /* es el autor de 
     content: " — "; 
 }
 
+article img {
+  margin: 1em 0 2em;
+}
+
+article span.recuadro {
+   display: block;
+   border: 1px dotted gray;
+   padding: 2em 1.5em;
+   text-align: center;
+   margin: 2em 0 3em;
+   
+}
+
+.centrar {
+   display: block;
+   text-align: center;
+   margin: 2em 0 3em;
+}
+
+article span.recuadro img {
+}
+
+.img100 img, .img-100 img { width: 100px;}
+.img120 img, .img-110 img{ width: 120px;}
+.img150 img, .img-150 img { width: 150px;}
+.img180 img, .img-180 img { width: 180px;}
+.img200 img, .img-200 img { width: 200px;}
+.img230 img, .img-230 img { width: 230px;}
+.img250 img, .img-250 img { width: 250px;}
+.img270 img, .img-270 img { width: 270px;}
+.img300 img, .img-300 img { width: 300px;}
+.img320 img, .img-320 img { width: 320px;}
+.img340 img, .img-340 img { width: 340px;}
+
 img.full {
   width: 640px;
 }
@@ -283,9 +384,19 @@ img.med {
   margin: 7px 31px 0 0;
 }
 
-.img-float {
+.img-float, .float {
   float: left;
   margin: 7px 31px 0 0;
+}
+
+article .img-float img,
+article .float img {
+  margin: 0;
+}
+
+div.vimeo,
+div.youtube {
+  margin: 3em 0 3em;
 }
 
 iframe {
@@ -309,7 +420,7 @@ article > span, article > div {
 
 article ul,
 article ol {
-  padding-left: 1.3em;
+  padding-left: 2em;
 }
 
 article li, {
@@ -326,9 +437,30 @@ article ul li:before {
     margin-left: -1.25em;
 }
 
-.notas p, .notas li {
+/* nota= 1 columna: notas=2columnas*/
+
+div.notas {
+   -moz-column-count: 2;
+   -moz-column-gap: 24px;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 24px;
+   column-count: 2;
+   column-gap: 24px;
+}
+
+.notas p, .notas li,
+.nota p, .nota li {
     font-size: 11px;
     line-height: 1.7em;
+}
+
+.notas ul, .nota ul {
+   padding-left: 0.8em;
+}
+
+.notas ul li:before, .nota ul li:before { 
+    content: "- ";
+    margin-left: -0.75em;
 }
 
 .lista-corta li {
@@ -425,7 +557,8 @@ article ul.tags li {
 }
 
 article ul.tags li:before { 
-/*    content: "#"; */
+    content: ""; 
+    margin: 0;
 }
 
 article ul.tags li a{
@@ -530,10 +663,22 @@ footer p a {
 }
 
 footer p a:before {
+}
 
+/* */
+
+a.edit {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  margin-top: -1em;
 }
 
 /* ESPECIALES */
+
+.fila-imagenes img {
+  margin: 0 1em;
+}
 
 #rms {
     font-size: 13px !important;

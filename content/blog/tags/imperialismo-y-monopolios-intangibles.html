@@ -1,0 +1,10 @@
+---
+extends: false
+listable: false
+
+---
+
+{% set titletag = 'Imperialismo y monopolios intangibles' %}
+{% set source = site.content.node_from_relative_path('blog') %}
+{% set walker = source['walk_resources_tagged_with_imperialismo-y-monopolios-intangibles'] %}
+{% extends "tagged_posts.j2" %}

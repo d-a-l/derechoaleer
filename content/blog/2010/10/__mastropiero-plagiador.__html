@@ -1,0 +1,43 @@
+---
+title: 'Mastropiero plagiador'
+author: derechoaleer
+created: !!timestamp 2010-10-25 04:40:13
+tags: 
+    - Videos
+    - Plagio
+    - Autores
+
+comments: 2
+nid: 256
+order: 189
+type: story
+status: 0
+format: 5
+---
+
+{% mark excerpt -%}{% import 'embed_media.j2' as embed %}
+
+
+{{ embed.youtube('613vsa5zUwM?fs=1', '') }}
+
+"Con motivo del estreno del conocido bolero Perdónala, del gran compositor Johann Sebastian Mastropiero, que escucharemos a continuación, el periódico Actualidad Musical se refirió a Mastropiero en términos muy elogiosos.
+
+<p>
+Pero a los pocos días publicó la siguiente rectificación:
+> Fe de erratas: donde dice «de inspiración arrebatada, como otros compositores románticos», debe decir «arrebatada a otros compositores románticos», y donde dice «su copiosa producción» debe decir «su copiada producción».
+
+Luego de escuchar el bolero Perdónala, el gran compositor Günter Frager le escribió indignado a Mastropiero, acusándolo de haber plagiado un pasaje de su Tercera sinfonía; la respuesta no se hizo esperar:
+
+<q>«Usted me ofende –dice Mastropiero en su carta–; justamente a mí, que siempre digo que el artista que se apodera de una idea de otro enturbia las aguas del manantial del espíritu»</q>, famosa frase... de Günter Frager...
+
+Curiosamente este caso, y otros por el estilo, que nos muestran a Mastropiero plagiando de Günter Frager han llegado a nosotros a través de la propia autobiografía de Mastropiero; y no es que se arrepienta y confiese su culpa, sino que su autobiografía es una copia textual de las memorias de Günter Frager.
+
+Sin embargo, los que amamos a Mastropiero creemos que muchas de estas conductas que se le atribuyen en realidad le son totalmente ajenas; probablemente sean de Günter Frager. Bien, escucharemos a continuación, pues, de Johann Sebastian Mastropiero, el bolero Perdónala... de Günter Frager."
+
+
+
+{%- endmark %}
+
+
+
+

@@ -1,0 +1,22 @@
+---
+title: 'test'
+author: scann
+created: !!timestamp 2010-11-14 19:09:44
+tags: 
+    - Caso Potel
+
+comments: 2
+nid: 263
+order: 195
+type: story
+status: 0
+format: 2
+---
+
+{% mark excerpt -%}
+
+{%- endmark %}
+
+
+
+

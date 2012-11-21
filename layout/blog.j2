@@ -4,6 +4,7 @@
 
 {% block main -%}
 <article class="post">
+<a class="edit" href="http://localdal/edit.php?nid={{ resource.meta.nid }}" target="_blank">^</a>
 <h1 class="title">
     <a href="{{ content_url(resource.url) }}">
         {{ resource.meta.title }}
