@@ -2,7 +2,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>
-        {% block title %}{{ resource.meta.title|default(feed_title) }}{% endblock %}
+        {% block title %}{{ resource.meta.title|forceescape }}{% endblock %}
     </title>
     {% block self_url %}
     <link href="{{ site.config.url_domain }}{{ resource.url }}" rel="self" />
@@ -21,16 +21,16 @@
 
     {% for res in resource.node.walk_resources_sorted_by_time() %}
         <entry>
-            <title type="html">{% filter forceescape -%}{{ res.meta.title }}{%- endfilter %}</title>
-            <author><name>{% filter forceescape -%}{{ res.meta.author }}{%- endfilter %}</name></author>
+            <title type="html">{{ res.meta.title|forceescape  }}</title>
+            <author><name>{{ res.meta.author|forceescape  }}</name></author>
             <link href="{{ site.config.url_domain }}{{ content_url(res.url) }}"/>
             <updated>{{ res.meta.created|xmldatetime }}</updated>
             <published>{{ res.meta.created|xmldatetime }}</published>
             <id>{{ site.config.url_domain }}{{ content_url(res.url) }}</id>
             {% for tag in res.meta.tags %}
             <category   scheme="{{ site.config.url_domain }}{{ content_url('blog/tags') }}"
-                        term="{% filter forceescape -%}{{tag}}{%- endfilter %}"
-                        label="{% filter forceescape -%}{{ tag|title }}{%- endfilter %}" />
+                        term="{{ tag|forceescape}}"
+                        label="{{ tag|forceescape }}" />
             {% endfor %}
 
             <content type="html">
@@ -43,9 +43,10 @@
                 {# article.post|markdown|typogrify //article.post no funciona! #}
                 {{ article.excerpt|markdown|typogrify }}
                 {%- endif %}
+                <p>Seguir leyendo "<a href="{{ site.config.url_domain }}{{ content_url(res.url) }}">{{ res.meta.title|forceescape  }}</a> en Derecho a Leer</p>
                 {%- endfilter %}
-                <p>Seguir leyendo "<a href="{{ site.config.url_domain }}{{ content_url(res.url) }}">{% filter forceescape -%}{{ res.meta.title }}{%- endfilter %}</a> en Derecho a Leer</p>
             </content>
         </entry>
+    {% if loop.index > 10 %}{% break %}{% endif %}
     {% endfor %}
 </feed>

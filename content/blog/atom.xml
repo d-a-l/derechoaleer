@@ -1,5 +1,5 @@
 ===
-title: Derecho a Leer | Posts feed
+title: Derecho a Leer - Entradas
 extends: atom.j2
 listable: false
 ===
