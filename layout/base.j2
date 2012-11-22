@@ -89,11 +89,7 @@
     {% endblock container %}
   </div> <!--! end of #container -->
   <footer>
-      <p>Esta web fue generada por <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | Repositorio con el <a href="https://github.com/d-a-l/derechoaleer">código fuente del sitio</a> | Tipografía <a href="http://www.georgduffner.at/ebgaramond">EB-Garamond</a> (<a href="https://github.com/georgd/EB-Garamond">código fuente</a>)</p>
-<!-- links sobre Garamond 
- - La Sainte Bible A Lyon Par Jan de Tournes, M.D.LXIIII. http://www.bvh.univ-tours.fr/Consult/consult.asp?numfiche=571&index=7&numtable=B372615206_18229&mode=1&ecran=0
- - Grandes maestros de la tipografía: Claude Garamond http://www.unostiposduros.com/grandes-maestros-de-la-tipografia-claude-garamond/
--->
+      <p>Esta web fue generada por <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | Repositorio con el <a href="https://github.com/d-a-l/derechoaleer">código fuente del sitio</a> | Tipografía <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a></p>
   </footer>
   {% endblock content%}
   {% block js %}
@@ -112,11 +108,9 @@
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
   <![endif]-->
-  {#
-	  {% block analytics %}
-	  {% include "analytics.j2" %}
-	  {% endblock analytics %}
-  #}
+  {% block piwik %}
+  {% include "piwik.j2" %}
+  {% endblock piwik %}
   {% endblock js %}
 </body>
 </html>
