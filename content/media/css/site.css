@@ -180,7 +180,9 @@ article blockquote p{
 }
 
 article .big-quote {
-  padding-right: 2em;
+    padding-right: 2em;
+    margin-bottom: 2em;
+    margin-top: 1em;
 }
 article .big-quote p {
     hyphens: none;
@@ -188,7 +190,10 @@ article .big-quote p {
    -moz-hyphens: none;
 
     font-size: 1.2em;
+    line-height: 1.6em;
     text-align: left;
+
+    color: gray;
 }
 
 article .big-quote p > span {
@@ -196,6 +201,8 @@ article .big-quote p > span {
    font-size: 13px;
   /* text-align: right; */
    font-style: normal;
+   margin-top: 1em;
+   color: black;
 }
 
 article .big-quote p > span.dquo {
@@ -213,7 +220,8 @@ article center {
     color: #666666;
 }
 
-article p > big {
+article p > big,
+article div.destacado > big {
     border-bottom: 4px solid #DDDDDD;
     border-top: 4px solid #DDDDDD;
     color: #666666;
@@ -225,8 +233,32 @@ article p > big {
     margin: 0.4em 1.5em 1em 0;
     padding: 0.9em;
     width: 272px;
+    clear: left;
 }
 
+article div.destacado.derecha > big {
+    float: right; clear: right;
+    margin: 0.4em 0 1em 1.5em;
+}
+
+article .destacado.solapar-6-lineas hr {height: 11.4em;}
+article .destacado.solapar-5-lineas hr {height: 9.8em;}
+article .destacado.solapar-4-lineas hr {height: 8em;}
+
+article .destacado hr {
+    float: left;
+    width: 1px;
+    border: none;
+    margin: 0; padding: 0;
+}
+
+article .destacado.derecha hr {
+    float: right;
+}
+
+article .destacado hr:last-child {
+    display: none;
+}
 
 article sup {
     font-size: 0.7em;
@@ -439,7 +471,7 @@ article ul li:before {
 
 /* nota= 1 columna: notas=2columnas*/
 
-div.notas {
+div.notas, div.footnotes {
    -moz-column-count: 2;
    -moz-column-gap: 24px;
    -webkit-column-count: 2;
@@ -449,18 +481,33 @@ div.notas {
 }
 
 .notas p, .notas li,
-.nota p, .nota li {
+.nota p, .nota li,
+div.footnotes {
     font-size: 11px;
     line-height: 1.7em;
 }
 
-.notas ul, .nota ul {
+div.footnotes ol {
+    padding-left: 1.8em;
+}
+
+div.footnotes ol li p {
+   display: inline;
+}
+
+.notas ul, .nota ul,
+.notas ol, .nota ol {
    padding-left: 0.8em;
 }
 
-.notas ul li:before, .nota ul li:before { 
+.notas ul li:before, .nota ul li:before,
+div.footnotes ul li:before { 
     content: "- ";
     margin-left: -0.75em;
+}
+
+div.footnotes hr:first-child {
+    display:none;
 }
 
 .lista-corta li {
