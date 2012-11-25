@@ -80,7 +80,7 @@ table {
 
 body {
   font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif',Georgia, serif;
-  font-size: 13px;
+  font-size: 14.3px; /* 13px; */
   line-height: 1.7em;
   background-color: #fff;
   color: #000;
@@ -106,6 +106,7 @@ pre, code {
 pre {
     border: 1px dotted gray;
     padding: 13px 14px;
+    margin: 0 0 1.2em;
 }
 
 /* ========= LAYOUT ========= */
@@ -160,9 +161,16 @@ header h1 {
 /* ========= CONTENIDO html ========= */
 
 article h3, article h4{
- font-size: 14px;
+ font-size: 16px; /* 14px; */
  margin-top: 2em;
  font-weight: bold;
+}
+
+article h2 {
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 1.6em 0 0.6em;
 }
 
 article p, article li {
@@ -198,7 +206,7 @@ article .big-quote p {
 
 article .big-quote p > span {
    display: block;
-   font-size: 13px;
+   font-size: 14.3px; /* 13px; */
   /* text-align: right; */
    font-style: normal;
    margin-top: 1em;
@@ -214,7 +222,7 @@ article .big-quote p > span.dquo {
 
 article center {
     padding: 0.5em;
-    font-size: 14px;
+    font-size: 15.4px; /* 14px; */
     margin-bottom: 1em;
     font-family: "Nimbus Sans L",Helvetica,Arial,Sans-serif;
     color: #666666;
@@ -301,7 +309,6 @@ p a:before {
 a:hover {
 }
 
-p a.img { }
 p a.img:before { content: ""; }
 a.img:hover { color: inherit; }
 
@@ -351,7 +358,7 @@ span.dquo {
 }
 
 blockquote.big-quote .autor-quote, blockquote.big-quote .aq { /* es el autor de la cita! */
-    font-size: 11px;
+    font-size: 12.1px; /* 11px; */
     text-align: right;
     display: block;
     color: black;
@@ -362,7 +369,7 @@ blockquote.big-quote .autor-quote, blockquote.big-quote .aq { /* es el autor de 
 
 .descargar {
     font-family: sans-serif;
-    font-size: 11px;
+    font-size: 12.1px; /* 11px; */
     font-weight: normal;
     margin: -3px 0 2em;
     text-decoration: none;
@@ -373,27 +380,43 @@ blockquote.big-quote .autor-quote, blockquote.big-quote .aq { /* es el autor de 
 }
 
 article img {
-  margin: 1em 0 2em;
+  margin: 1em 0;
 }
 
-article span.recuadro {
+
+.borde img {
+   border: 1px dotted gray;
+}
+
+article .recuadro {
    display: block;
    border: 1px dotted gray;
    padding: 2em 1.5em;
-   text-align: center;
-   margin: 2em 0 3em;
-   
+   margin: 2em 0 3em; 
 }
 
-.centrar {
+.align-center {
+   text-align: center;
+}
+
+.centrar, .centrado {
    display: block;
    text-align: center;
    margin: 2em 0 3em;
+}
+
+.marginado p, .marginado {
+   text-align: left;
+   hyphens: none;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+   
 }
 
 article span.recuadro img {
 }
 
+.img80 img, .img-80 img { width: 80px;}
 .img100 img, .img-100 img { width: 100px;}
 .img120 img, .img-110 img{ width: 120px;}
 .img150 img, .img-150 img { width: 150px;}
@@ -406,12 +429,22 @@ article span.recuadro img {
 .img320 img, .img-320 img { width: 320px;}
 .img340 img, .img-340 img { width: 340px;}
 
-img.full {
-  width: 640px;
+.img {
+  display: block;
+  padding: 0 2em;
 }
 
-img.med {
-  width: 320px;
+.img img {
+  width: 100%;
+}
+
+.full img {
+  width: 100%;
+}
+
+img.med,
+.med img {
+  width: 50%;
   float: left;
   margin: 7px 31px 0 0;
 }
@@ -426,8 +459,20 @@ article .float img {
   margin: 0;
 }
 
+.pretitulo {
+    background: none repeat scroll 0 0 black;
+    color: white;
+    display: block;
+    font-family: "Liberation Mono","Andale Mono",monospace;
+    font-size: 15px;
+    margin: 4em 0 1em;
+    padding: 0 0.4em;
+}
+
 div.vimeo,
-div.youtube {
+div.youtube,
+div.video,
+div.audio {
   margin: 3em 0 3em;
 }
 
@@ -440,10 +485,11 @@ iframe.i640 {
 }
 
 .epigrafe, .ep {
+    display: block;
     font-size: 12px;
-    line-height: 1.4em;
-    margin: -1em 0 1em 0;
     font-style: italic;
+    line-height: 1.5em;
+    margin: -0.8em 0 2em;
 }
 
 article > span, article > div {
@@ -483,7 +529,7 @@ div.notas, div.footnotes {
 .notas p, .notas li,
 .nota p, .nota li,
 div.footnotes {
-    font-size: 11px;
+    font-size: 12.1px; /* 11px; */
     line-height: 1.7em;
 }
 
@@ -510,13 +556,14 @@ div.footnotes hr:first-child {
     display:none;
 }
 
-.lista-corta li {
+.lista-corta li, .corto li {
   margin-bottom: 0.3em;
 }
 
 hr {
-    margin: 3em auto;
-    /* width: 39%; */
+    margin: 3em auto 4em;
+    width: 39%;
+    /* margin: 3em auto; */
 }
 
 hr.post-bottom {
@@ -526,12 +573,24 @@ hr.post-bottom {
 
 .meta-bottom {
   margin: 3em 0 5em;
+  clear: both;
 }
 
 .meta-bottom p,
 .meta-bottom ul
 .meta-bottom div {
   text-align: left;
+}
+
+.licencia {
+    font-family: "Bitstream Vera Sans Mono","Courier New",monospace;
+    font-size: 0.75em;
+    line-height: 1.5em;
+}
+
+.licencia img, .licencia-general img {
+    float: left;
+    margin: 0 10px 0 0;
 }
 
 /* ========= NODOS titulos  ========= */
@@ -541,9 +600,13 @@ h1, h2 {
 
 .title-excerpt, h1.title {
   font-family: 'Nimbus Sans L', Helvetica, Arial, sans-serif;
-  font-size: 37px;
+  font-size: 40.7px;
   letter-spacing: -3px;
   line-height: 39px;
+  width: 90%;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0 0 1em 0;
 }
 
 h1.tag.title {
@@ -574,7 +637,7 @@ article.excerpt {
 
 .meta-post, .top-title {
     font-family: "Liberation Mono", "Andale Mono", monospace;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 20px;
     color: #666;
 }
@@ -691,7 +754,7 @@ nav.post_nav p a:before{
 
 /* ========= FOOTER  ========= */
 footer{
-  font-size: 11px;
+  font-size: 12px;
   color: #ccc;
 }
 footer p {
@@ -715,17 +778,58 @@ footer p a:before {
 /* */
 
 a.edit {
-  display: block;
-  text-decoration: none;
-  text-align: right;
-  margin-top: -1em;
+    display: block;
+    float: right;
+    margin-top: -1em;
+    text-align: right;
+    text-decoration: none;
 }
 
 /* ESPECIALES */
 
+/* pastillas del post cuevana /blog/2011/10/cuevana-7-hechos-y-7-peliculas.html */
+
+.pastilla {
+    padding: 1em 2em;
+    clear: both;
+}
+
+.pastilla-float {
+     float: left;
+    margin: 0 16px 0 0;
+    padding: 1em 0;
+    width: 300px;
+}
+
+.pastilla > p, .pastilla-float > p {
+    margin-left: 120px;
+    text-align: left;
+    font-size: 12.1px; /* 11px; */
+    line-height: 1.7em;
+    hyphens: none;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+
+}
+
+.pastilla > p:first-child, .pastilla-float > p:first-child {
+    margin-bottom: 0px;
+}
+
+.pastilla img, .pastilla-float img {
+    float: left;
+    max-width: 110px;
+    margin: 5px 0 0 -120px;
+}
+
+
+/* */
+
 .fila-imagenes img {
   margin: 0 1em;
 }
+
+/* */
 
 #rms {
     font-size: 13px !important;

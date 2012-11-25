@@ -4,7 +4,8 @@
 
 {% block main -%}
 <article class="post">
-<a class="edit" href="http://localdal/edit.php?nid={{ resource.meta.nid }}" target="_blank">^</a>
+<a class="edit" title="edit in github" href="https://github.com/d-a-l/derechoaleer/blob/master/content{{ content_url(resource.url) }}" target="_blank">^</a>
+<a class="edit" title="edit in dal script" href="http://localdal/edit.php?nid={{ resource.meta.nid }}" target="_blank">^</a>
 <h1 class="title">
     <a href="{{ content_url(resource.url) }}">
         {{ resource.meta.title }}
