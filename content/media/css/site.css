@@ -79,7 +79,7 @@ table {
 /* ========= HTML en general ========= */
 
 body {
-  font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif',Georgia, serif;
+  font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif', Georgia, georgia, serif;
   font-size: 14.3px; /* 13px; */
   line-height: 1.7em;
   background-color: #fff;
