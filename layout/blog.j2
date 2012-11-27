@@ -2,6 +2,10 @@
 {% from "macros.j2" import render_tags with context  %}
 {% import 'embed_media.j2' as embed %} 
 
+{% block endhead %}
+{% include "juvia.j2" %}
+{% endblock endhead %}
+
 {% block main -%}
 <article class="post">
 <a class="edit" rel="nofollow" title="edit in github" href="https://github.com/d-a-l/derechoaleer/blob/master/content{{ content_url(resource.url) }}" target="_blank">^</a>
@@ -34,6 +38,9 @@
     {{ render_tags(resource, 'tags') }}
 {% endif %}
 </div>
+{% if resource.meta.comments_status == 'open' %}
+<div class="comments" id="comments"></div>
+{% endif %}
 </article>
 
 <nav class="post_nav">
