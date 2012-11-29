@@ -4,9 +4,9 @@
     var options = {
         container   : '#comments',
         site_key    : '25ri3a3zatodzh87nbyigm7qd8dfx10',
-        topic_key   : {{ content_url(resource.url) }},
-        topic_url   : {{ site.config.url_domain }}{{ content_url(resource.url) }},
-        topic_title : document.title || {{ site.config.url_domain }}{{ content_url(resource.url) }},
+        topic_key   : '{{ content_url(resource.url) }}',
+        topic_url   : '{{ site.config.url_domain }}{{ content_url(resource.url) }}',
+        topic_title : document.title || '{{ site.config.url_domain }}{{ content_url(resource.url) }}',
         include_base: !window.Juvia,
         include_css : !window.Juvia
     };
