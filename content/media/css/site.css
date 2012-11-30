@@ -534,9 +534,11 @@ div.footnotes {
 }
 
 div.footnotes ol {
-    padding-left: 1.8em;
+    padding-left: 0;
 }
-
+div.footnotes ol li {
+   list-style-position: inside;
+}
 div.footnotes ol li p {
    display: inline;
 }
