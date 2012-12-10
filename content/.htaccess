@@ -1,0 +1,12 @@
+---
+extends:
+---
+<IfModule mod_rewrite.c>
+
+  RewriteEngine on
+
+  RewriteRule ^\/?$ http://derechoaleer.info/blog/ [R=301,L]
+
+  RewriteRule ^index\.htm.?$ http://derechoaleer.info/blog/ [R=301,L]
+
+</IfModule>

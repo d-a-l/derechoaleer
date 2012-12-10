@@ -1,0 +1,10 @@
+---
+extends: false
+listable: false
+
+---
+
+{% set titletag = 'Peak Oil' %}
+{% set source = site.content.node_from_relative_path('blog') %}
+{% set walker = source['walk_resources_tagged_with_peak-oil'] %}
+{% extends "tagged_posts.j2" %}
