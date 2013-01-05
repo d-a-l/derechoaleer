@@ -9,4 +9,6 @@ extends:
 
   RewriteRule ^index\.htm.?$ http://derechoaleer.info/blog/ [R=301,L]
 
+  RewriteRule ^dl\/disenolibre\.html http://derechoaleer.info/media/files/dl/disenolibre.html [L]
+
 </IfModule>
