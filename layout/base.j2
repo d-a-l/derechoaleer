@@ -56,7 +56,7 @@
   {% endblock headjs %}
   {% block endhead %}{% endblock endhead %}
 </head>
-<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}" lang="es">
+<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}" {% block bodyclasses %}{% endblock %} lang="es">
   {% block content %}
   <div id="container">
       {% block container %}
@@ -64,12 +64,12 @@
           <header class="banner clearfix">
           {% block header -%}
 	    <div id="barra-negra-logo">
-	      <div id="header-container">
+	      <div id="header-container">{#
 		<div id="logo-title">
 		   <a rel="home" title="Inicio" href="/blog"><img alt="Derecho a LEER" src="/media/css/template_img/llamas.png"></a>
-		</div>
+		</div> #}
 		<div id="dal-title">
-<h1 id="site-name">Derecho a LEER</h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
+<h1 id="site-name"><a href="http://derechoaleer.info/blog/posts.html">Derecho a LEER</a></h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
 		</div>
 	      </div>
 	    </div>

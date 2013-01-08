@@ -40,18 +40,19 @@ table {
 /* === header === */
 
 #barra-negra-logo {
-    background-color: black;
-    height: 80px;
-    margin-top: 80px;
+    background: url("/media/css/template_img/background.png") repeat-x scroll 0 1px transparent;
+    margin-top: 0; /* 80px */
 }
 
 #header-container {
-    position: relative;
+    background: url("/media/css/template_img/llamas.png") no-repeat scroll 0 bottom transparent;
+    /* position: relative; */
     margin: 0 auto;
-    width: 1038px;
+    max-width: 1038px;
 }
 
 #logo-title {
+  display: none;
 }
 #logo-title img{
     position: absolute;
@@ -64,8 +65,8 @@ table {
     font-size: 14px;
     line-height: 22px;
     margin: 0 0 0 197px;
-    padding: 7px 0 0;
-    width: 650px;
+    padding: 100px 0 7px ;
+    max-width: 650px;
     font-style: normal;
 }
 
@@ -74,6 +75,10 @@ table {
 /*    font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif',Georgia,Serif; */
     font-weight: normal;
     letter-spacing: normal;
+}
+
+#site-name > a {
+    color: inherit;
 }
 
 /* ========= HTML en general ========= */
@@ -89,6 +94,10 @@ body {
 h1, h2, h3, h4, h5, h6,
 ul, ol, p {
  margin-bottom: 1em;
+}
+
+body#posts .content > h1.title {
+ display: none;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, mark {
@@ -112,17 +121,21 @@ pre {
 /* ========= LAYOUT ========= */
 
 .content {
-  width: 640px;
+  max-width: 640px;
   margin: 0 auto;
+  padding: 80px 10px 0 10px;
 }
 
+.biblio .content {
+  padding: 80px 20px 0 20px;
+}
 
 .content .listing, article.post { /* primer articulo */
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 section.archives {
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 .archive-title {
@@ -752,8 +765,35 @@ nav.post_nav p a:before{
  content: "";
 }
 
+/* ========= BIBLIO ========= */
 
+.biblio h1.title {
+  margin: 0;
+}
+.biblio .author {
+  margin: 0.7em 0 2.5em;
+}
+.biblio .author-name {
+  font-style: italic;
+}
+.biblio .top-nav {
+  margin: 0 0 2.5em;
+}
+.biblio a.edit {
+    margin-top: 0;
+}
+article.biblio .main-text p {
+ text-indent: 1.5em;
+}
+article.biblio .main-text li {
+}
 
+.biblio .top-nav, .biblio a.edit {
+  color: #666666;
+  font-family: "Liberation Mono","Andale Mono",monospace;
+  font-size: 12px;
+  line-height: 20px;
+}
 /* ========= FOOTER  ========= */
 footer{
   font-size: 12px;

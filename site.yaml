@@ -12,6 +12,7 @@ plugins:
     - hyde.ext.plugins.syntext.SyntextPlugin
     - hyde.ext.plugins.textlinks.TextlinksPlugin
     - hyde.ext.plugins.paginator.PaginatorPlugin
+    - hyde.site_plugins.RenamerPlugin
 context:
     data:
         tweet_via: derechoaleer
@@ -46,6 +47,24 @@ sorter:
         filters:
             source.kind: html
             meta.listable: true
+    name:
+        attr:
+            - name
+        filters:
+            source.kind: md
+    order:
+        attr:
+            - meta.order
+        filters:
+            source.kind: md
+renamer:
+    include_file_patterns:
+        - '*.md'
+        - '*.markdown'
+    config:
+        html:
+            - '*.md'
+            - '*.markdown'
 tagger:
     sorter: time
     archives:
