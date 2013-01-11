@@ -730,11 +730,6 @@ span.lk {
 }
 
 .more {
-
-a.more:after {
-    content: " »";
-}
-.more {
     display: block;
     font-style: italic;
     margin: 2em 0.2em 2em 0;
