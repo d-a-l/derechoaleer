@@ -1,0 +1,63 @@
+{% macro get_rss_link(lang) %}
+{% if lang == "en" %}
+<link rel="alternate" type="application/atom+xml" title="Right to Read (Atom - en)" href="{{ site.config.url_domain }}/en/blog/atom.xml" />
+{% elif lang == "de" %}
+<link rel="alternate" type="application/atom+xml" title="Recht zu Lesen (Atom - de)" href="{{ site.config.url_domain }}/de/blog/atom.xml" />
+{% elif lang == "fr" %}
+<link rel="alternate" type="application/atom+xml" title="Droit de Lire (Atom - fr)" href="{{ site.config.url_domain }}/fr/blog/atom.xml" />
+{% elif lang == "ca" %}
+<link rel="alternate" type="application/atom+xml" title="Dret a Llegir (Atom - ca)" href="{{ site.config.url_domain }}/ca/blog/atom.xml" />
+{% else %}
+<link rel="alternate" type="application/atom+xml" title="Derecho a Leer (Atom - es)" href="{{ site.config.url_domain }}/blog/atom.xml" />
+{% endif %}
+{% endmacro %}
+
+
+{% macro get_header_text(lang) -%}
+{% if lang == "en" %}
+<h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Right to Read</a></h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Derecho a Leer / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
+{% elif lang == "de" %}
+<h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Recht zu Lesen</a></h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Derecho a leer / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
+{% elif lang == "fr" %}
+<h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Droit de lire</a></h1> / Direito de ler / حق القراءة / Derecho a leer / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
+{% elif lang == "ca" %}
+<h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Dret a Llegir</a></h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Derecho a leer / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
+{% else %}
+<h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Derecho a LEER</a></h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
+{% endif %}
+{% endmacro %}
+
+
+{% macro get_footer_text(lang) -%}
+{% if lang == "en" %}
+Powered by <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Website code source</a> | Font <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+{% elif lang == "de" %}
+Angetrieben von <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Quelltext</a> | Schriftschnitt <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+{% elif lang == "fr" %}
+Propulsé par <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Code source du site</a> | Fonte de caractères <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+{% elif lang == "ca" %}
+Funciona amb <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Codi font</a> | Tipografia <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+{% else %}
+Esta web fue generada por <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | Repositorio con el <a href="https://github.com/d-a-l/derechoaleer">código fuente del sitio</a> | Tipografía <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+{% endif %}
+{%- endmacro %}
+
+
+{% macro get_back_to_home_link(lang) -%}
+{% if lang == "en" %}
+Back to <a class="backlink" href="/en/blog/posts.html">blog post list</a>
+{% elif lang == "de" %}
+Zurück zur <a class="backlink" href="/en/blog/posts.html">Blog-Beiträge Liste</a>
+{% elif lang == "fr" %}
+Retour à <a class="backlink" href="/en/blog/posts.html">la liste des articles</a> du blog
+{% elif lang == "ca" %}
+Tornar al <a class="backlink" href="/en/blog/posts.html">llistat d'articles</a> del bloc
+{% else %}
+Volver al <a class="backlink" href="/blog/posts.html">listado de entradas</a> del blog
+{% endif %}
+{%- endmacro %}
+
+
+{% macro get_blog_home_url(lang) -%}
+{% if lang == 'es'  %}{{ site.config.url_domain }}/blog/posts.html{% else %}{{ site.config.url_domain }}{% if lang %}/{{lang}}{% endif %}/blog/posts.html{% endif %}
+{%- endmacro %}

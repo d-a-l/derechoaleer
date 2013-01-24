@@ -1,4 +1,58 @@
+{# TODO: https://github.com/hyde/trans <- problem with hyde jinja2 extra tags! #}
+{% if resource.meta.language == "en" %}
+  {% set t = {
+	'by': 'by', 
+	'continue_reading': 'Continue Reading',
+        'permanent_link': 'Permanent Link',
+	'blog_title': 'Rigth to Read',
+	'published': 'Published by',
+        'prev': 'Previous',
+	'next': 'Next'
+	} %}
+{% elif resource.meta.language == "de" %}
+  {% set t = {
+	'by': 'von', 
+	'continue_reading': 'Lesen Sie weiter',
+        'permanent_link': 'Permanent Link',
+	'blog_title': 'Recht zu Lesen',
+	'published': 'Veröffentlicht von',
+        'prev': 'Früher',
+	'next': 'Nächste'
+	} %}
+{% elif resource.meta.language == "fr" %}
+  {% set t = {
+	'by': 'par', 
+	'continue_reading': 'Continuer la lecture',
+        'permanent_link': 'Lien permanent',
+	'blog_title': 'Droit de Lire',
+	'published': 'Publié par',
+        'prev': 'Précédent',
+	'next': 'Suivant'
+	} %}
+{% elif resource.meta.language == "ca" %}
+  {% set t = {
+	'by': 'per', 
+	'continue_reading': 'Continuar llegint',
+        'permanent_link': 'Enllaç permanent',
+	'blog_title': 'Dret a Llegir',
+	'published': 'Publicat per',
+        'prev': 'Anterior',
+	'next': 'Següent'
+	} %}
+{% else %}
+  {% set t = {
+	'by': 'por',
+	'continue_reading': 'Seguir leyendo',
+        'permanent_link': 'Enlace permanente',
+	'blog_title': 'Derecho a LEER',
+	'published': 'Publicado por',
+        'prev': 'Anterior',
+	'next': 'Siguiente'
+	} %}
+{% endif %}
+{% import "multilanguage.j2" as m %} 
 <!doctype html>
+<!-- {{ resource.meta.language }} -->
 <!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
@@ -9,7 +63,7 @@
   {% block starthead %}{% endblock starthead %}
   <meta charset="utf-8" />
 {#  <meta charset="{{ resource.meta.charset }}"> #}
-<link rel="alternate" type="application/atom+xml" title="Derecho a Leer (Atom)" href="{{ site.config.url_domain }}/blog/atom.xml" />
+{{ m.get_rss_link(resource.meta.language) }}
   <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="{{ resource.meta.compatibility }}">
@@ -56,7 +110,7 @@
   {% endblock headjs %}
   {% block endhead %}{% endblock endhead %}
 </head>
-<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}" {% block bodyclasses %}{% endblock %} lang="es">
+<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}" {% block bodyclasses %}{% endblock %} lang="{{ resource.meta.language }}">
   {% block content %}
   <div id="container">
       {% block container %}
@@ -68,9 +122,7 @@
 		<div id="logo-title">
 		   <a rel="home" title="Inicio" href="/blog"><img alt="Derecho a LEER" src="/media/css/template_img/llamas.png"></a>
 		</div> #}
-		<div id="dal-title">
-<h1 id="site-name"><a href="{{ site.config.url_domain }}/blog/posts.html">Derecho a LEER</a></h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
-		</div>
+		<div id="dal-title">{{ m.get_header_text(resource.meta.language) }}</div>
 	      </div>
 	    </div>
           {%- endblock %}
@@ -89,7 +141,7 @@
     {% endblock container %}
   </div> <!--! end of #container -->
   <footer>
-      <p>Esta web fue generada por <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | Repositorio con el <a href="https://github.com/d-a-l/derechoaleer">código fuente del sitio</a> | Tipografía <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a></p>
+      <p>{{ m.get_footer_text(resource.meta.language) }}</p>
   </footer>
   {% endblock content%}
   {% block js %}

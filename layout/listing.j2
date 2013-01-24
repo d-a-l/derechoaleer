@@ -7,7 +7,7 @@
 <div class="listing clear">
 {# for res in resource.node.walk_resources_sorted_by_time() #}
 {% for res in resource.page.posts %}
-    {{ render_excerpt(res, 'excerpt') }}
+    {{ render_excerpt(res, 'excerpt', t) }}
 {% endfor %}
 
 <div class="paginator">

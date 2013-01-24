@@ -1,14 +1,14 @@
-{% macro render_excerpt(res, class=None) %}
+{% macro render_excerpt(res, class=None, t) %}
 {% refer to res.url as post %}
 {# {% import 'embed_media.j2' as embed %} #}
 <article {{'class='~class if class }}>
 {# <a href="{{ content_url(res.url) }}">{{ post.image|markdown2|typogrify }}</a> #}
-<span class="top-title"><time class="top" datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">{{ res.meta.created.strftime('%d|%m|%Y') }} </time><span class="ap">por {{ res.meta.author }}.</span></span>
+<span class="top-title"><time class="top" datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">{{ res.meta.created.strftime('%d|%m|%Y') }} </time><span class="ap">{{ t['by'] }} {{ res.meta.author }}.</span></span>
 <h2 class="title-excerpt"><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></h2>
 {% if post.excerpt %}
 	{{ post.excerpt|markdown2|typogrify }}
 {% endif %}
-<a class="more" href="{{ content_url(res.url) }}">Seguir leyendo</a>
+<a class="more" href="{{ content_url(res.url) }}">{{ t['continue_reading'] }}</a>
 <hr class="post-bottom">
 {% if res.meta.tags %}
     {{ render_tags(res, 'tags') }}

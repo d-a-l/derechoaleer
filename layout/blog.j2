@@ -31,8 +31,8 @@
 {%- endmark %}
 
 <div class="meta-bottom">
-<p class="meta-post"><span class="lk">Enlace Permanente: <a href="http://derechoaleer.info{{ content_url(resource.url) }}">http://derechoaleer.info{{ content_url(resource.url) }}</a></span></p>
-<p class="meta-post">Publicado por <span class="ap inline">{{ resource.meta.author }}</span>, el <time class="inline" datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">{{ resource.meta.created.strftime('%d|%m|%Y') }}</time></p>
+<p class="meta-post"><span class="lk">{{ t['permanent_link'] }}: <a href="{{ site.config.url_domain }}{{ content_url(resource.url) }}">{{ site.config.url_domain }}{{ content_url(resource.url) }}</a></span></p>
+<p class="meta-post">{{ t['published'] }} <span class="ap inline">{{ resource.meta.author }}</span> &mdash; <time class="inline" datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">{{ resource.meta.created.strftime('%d|%m|%Y') }}</time></p>
 <hr class="post-bottom">
 {% if resource.meta.tags %}
     {{ render_tags(resource, 'tags') }}
@@ -43,25 +43,29 @@
 {% endif %}
 </article>
 
-<nav class="post_nav">
+ <nav class="post_nav">
 
-{% if resource.next_by_time %}
-   <p class="anterior">Anterior: <a class="prev{{' disabled' if not resource.next_by_time }}"
-      title="{{ resource.next_by_time.meta.title }}"
-      href="{{ content_url(resource.next_by_time.url) }}">
-      "{{ resource.next_by_time.meta.title }}"
+{% if resource.meta.next_post_nav %}
+
+ {% if resource.next_by_time_es %}
+    <p class="anterior">{{ t['prev'] }}: <a class="prev{{' disabled' if not resource.next_by_time_es }}"
+       title="{{ resource.next_by_time_es.meta.title }}"
+       href="{{ content_url(resource.next_by_time_es.url) }}">
+       "{{ resource.next_by_time_es.meta.title }}"
+    </a>.</p>
+ {% endif %}
+
+ {% if resource.prev_by_time_es %}
+   <p class="siguiente">{{ t['next'] }}: <a class="next{{' disabled' if not resource.prev_by_time_es }}"
+       title="{{ resource.prev_by_time_es.meta.title }}"
+       href="{{ content_url(resource.prev_by_time_es.url) }}">
+       "{{ resource.prev_by_time_es.meta.title}}"
    </a>.</p>
+ {% endif %}
+
 {% endif %}
 
-{% if resource.prev_by_time %}
-  <p class="siguiente">Siguiente: <a class="next{{' disabled' if not resource.prev_by_time }}"
-      title="{{ resource.prev_by_time.meta.title }}"
-      href="{{ content_url(resource.prev_by_time.url) }}">
-      "{{ resource.prev_by_time.meta.title}}"
-  </a>.</p>
-{% endif %}
-
-   <p class="volver">Volver al <a class="backlink" href="/blog/posts.html">listado de entradas</a> del blog.</p>
+   <p class="volver">{{ m.get_back_to_home_link(resource.meta.language) }}.</p>
 
 </nav>
 
