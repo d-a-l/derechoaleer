@@ -1,0 +1,5 @@
+===
+title: Recht zu Lesen - Blog-Beiträge
+extends: atom.j2
+listable: false
+===

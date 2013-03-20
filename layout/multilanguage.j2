@@ -22,6 +22,8 @@
 <h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Droit de lire</a></h1> / Direito de ler / حق القراءة / Derecho a leer / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
 {% elif lang == "ca" %}
 <h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Dret a Llegir</a></h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Derecho a leer / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
+{% elif lang == "br" %}
+<h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Direito de ler</a></h1> / Derecho a leer / حق القراءة / Droit de lire / הזכות לקרוא / Dret a Llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
 {% else %}
 <h1 id="site-name"><a href="{{ get_blog_home_url(lang) }}">Derecho a LEER</a></h1> / Direito de ler / حق القراءة / Droit de lire / הזכות לקרוא / Dret a llegir / Право читать / Právo číst / حق مطالعه / Recht zu lesen / Okuma Hakkı / Rätten att läsa / Right to read / Diritto a leggere / Pravica brati / Правото да четеш / Oikeus lukea
 {% endif %}
@@ -30,15 +32,15 @@
 
 {% macro get_footer_text(lang) -%}
 {% if lang == "en" %}
-Powered by <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Website code source</a> | Font <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+Powered by <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Website code source</a> | Font <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
 {% elif lang == "de" %}
-Angetrieben von <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Quelltext</a> | Schriftschnitt <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+Angetrieben von <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Quelltext</a> | Schriftschnitt <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
 {% elif lang == "fr" %}
-Propulsé par <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Code source du site</a> | Fonte de caractères <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+Propulsé par <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Code source du site</a> | Fonte de caractères <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
 {% elif lang == "ca" %}
-Funciona amb <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Codi font</a> | Tipografia <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+Funciona amb <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Codi font</a> | Tipografia <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
 {% else %}
-Esta web fue generada por <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | Repositorio con el <a href="https://github.com/d-a-l/derechoaleer">código fuente del sitio</a> | Tipografía <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
+Esta web fue generada por <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | Repositorio con el <a href="https://github.com/d-a-l/derechoaleer">código fuente del sitio</a> | Tipografía <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | Licencia: <a href="http://creativecommons.org/licenses/by-sa/2.5/ar/">cc-by-sa</a>
 {% endif %}
 {%- endmacro %}
 
