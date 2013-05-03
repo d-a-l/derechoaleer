@@ -392,7 +392,7 @@ blockquote.big-quote .autor-quote, blockquote.big-quote .aq { /* es el autor de 
     font-family: sans-serif;
     font-size: 12.1px; /* 11px; */
     font-weight: normal;
-    margin: -3px 0 2em;
+    margin: -3em 0 2em;
     text-decoration: none;
 }
 
