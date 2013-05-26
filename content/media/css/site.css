@@ -434,6 +434,16 @@ article .recuadro {
    
 }
 
+.bloque {
+ margin-top: 2em;
+ margin-bottom: 2em;
+}
+
+.bloque p {
+ -moz-hyphens: none;
+ text-align: left;
+}
+
 article span.recuadro img {
 }
 
@@ -456,7 +466,9 @@ article span.recuadro img {
 }
 
 .img img {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 1em auto;
+  display: block;
 }
 
 .full img {
@@ -511,6 +523,10 @@ iframe.i640 {
     font-style: italic;
     line-height: 1.5em;
     margin: -0.8em 0 2em;
+}
+
+.bloque .ep {
+  margin-bottom: 1em; /* el bloque esta pensado para ser una foto mas un parrafo */
 }
 
 article > span, article > div {
@@ -624,7 +640,7 @@ h1, h2 {
 .title-excerpt, h1.title {
   font-family: 'Nimbus Sans L', Helvetica, Arial, sans-serif;
   font-size: 40.7px;
-  letter-spacing: -3px;
+  letter-spacing: -2.7px;
   line-height: 39px;
   width: 90%;
   font-style: normal;
@@ -852,7 +868,7 @@ a.edit {
 }
 
 .pastilla > p, .pastilla-float > p {
-    margin-left: 120px;
+    /* margin-left: 120px; */
     text-align: left;
     font-size: 12.1px; /* 11px; */
     line-height: 1.7em;
@@ -869,7 +885,8 @@ a.edit {
 .pastilla img, .pastilla-float img {
     float: left;
     max-width: 110px;
-    margin: 5px 0 0 -120px;
+    /* margin: 5px 0 0 -120px; */
+    margin: 3px 11px 0 0;
 }
 
 
