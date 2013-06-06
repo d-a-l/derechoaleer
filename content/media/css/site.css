@@ -440,6 +440,8 @@ article .recuadro {
 }
 
 .bloque p {
+  hyphens: none;
+ -webkit-hyphens: none;
  -moz-hyphens: none;
  text-align: left;
 }
@@ -908,3 +910,17 @@ a.edit {
 #copyleft p a:hover {color: white;}
 #copyleft p a:hover b {color: black;}
 #copyleft p a b {font-weight: normal; text-decoration: none;}
+
+/* juvia styles */
+
+.juvia-comment-content p,
+.juvia-comment-content li {
+  text-align: left;
+  font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif',Georgia,georgia,serif;
+  font-size: 12.1px;
+  line-height: 1.7em;
+  hyphens: none;
+ -webkit-hyphens: none;
+ -moz-hyphens: none;
+}
+
