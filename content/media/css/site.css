@@ -462,6 +462,39 @@ article span.recuadro img {
 .img320 img, .img-320 img { width: 320px;}
 .img340 img, .img-340 img { width: 340px;}
 
+
+.imgfloat img, .imgfloat .ep, .imgfloat .epigrafe {
+    width: 100%;
+}
+
+.imgfloat {
+    float: left;
+    margin: 7px 31px 0 0;
+}
+
+.imgcenter img, .imgcenter .ep, .imgcenter .epigrafe {
+    width: 100%;
+}
+
+.imgcenter {
+    display: block;
+    margin: 3em auto;
+    width: 340px;
+}
+
+.w80 { width: 80px;}
+.w100 { width: 100px;}
+.w120{ width: 120px;}
+.w150 { width: 150px;}
+.w180 { width: 180px;}
+.w200 { width: 200px;}
+.w230 { width: 230px;}
+.w250 { width: 250px;}
+.w270 { width: 270px;}
+.w300 { width: 300px;}
+.w320 { width: 320px;}
+.w340 { width: 340px;}
+
 .img {
   display: block;
   padding: 0 2em;
@@ -504,6 +537,10 @@ article .float img {
     padding: 0 0.4em;
 }
 
+video {
+    max-width: 100%;
+}
+
 div.vimeo,
 div.youtube,
 div.video,
@@ -525,6 +562,7 @@ iframe.i640 {
     font-style: italic;
     line-height: 1.5em;
     margin: -0.8em 0 2em;
+    text-align: left;
 }
 
 .bloque .ep {
@@ -549,9 +587,11 @@ article ul li {
     list-style-type: none;
 }
 
-article ul li:before { 
+
+article ul li:before {
     content: "— ";
-    margin-left: -1.25em;
+    float: left;
+    margin-left: -2em;
 }
 
 /* nota= 1 columna: notas=2columnas*/
@@ -924,3 +964,16 @@ a.edit {
  -moz-hyphens: none;
 }
 
+/* Ballmer post */
+
+.ballmerlist p {
+    -moz-hyphens: none;
+    clear: left;
+    padding-top: 12px;
+    text-align: left;
+    width: 75%;
+}
+
+.ballmerlist .float img {
+    margin: -12px 0 0;
+}

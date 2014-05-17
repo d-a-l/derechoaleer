@@ -33,6 +33,7 @@ extends:
   RewriteRule ^2010/12/mirrors-de-wikileaks.html(.*)$ http://derechoaleer.org/blog/2010/12/wikileaks-mas-recursos.html [R=301,L]
   RewriteRule ^netart.incubadora.fapesp.br/portal/midias/foucault.pdf$ http://netart.incubadora.fapesp.br/portal/midias/foucault.pdf [R=301,L]
   RewriteRule ^2010/12/¡feliz-dia-del-dominio-publico.html$ /blog/2010/12/feliz-dia-del-dominio-publico.html [R=301,L]
+  RewriteRule ^media/files/infocadra_baja_64.png$ /media/img/2013/cadra/infografia-estafa-cadra-uba-2013.png [R=301,L]
   RewriteRule ^images/2010/pdd-2010(.*).jpg$ http://derechoaleer.info/media/img/2010/pdd-2011$1.jpg [R=301,L]
 
 
@@ -52,7 +53,8 @@ extends:
 
 # disenolibre
 
-  RewriteRule ^dl\/disenolibre\.html /media/files/dl/disenolibre.html [L]
-
+  # RewriteRule ^dl\/disenolibre\.html /media/files/dl/disenolibre.html [L]
+  # RewriteRule ^dl\/(.*)$ /media/files/dl/$1 [L]
+  RewriteRule ^dl\/disenolibre\.html http://disenolibre.derechoaleer.org/disenolibre.html [R=301,L]
 
 </IfModule>

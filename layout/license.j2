@@ -1,0 +1,5 @@
+{% if resource.meta.license == 'cc-by-sa' %}
+<div class="licencia">
+<a href="http://creativecommons.org/licenses/by-sa/2.5/ar/"><img src="http://i.creativecommons.org/l/by-sa/2.5/ar/80x15.png" /></a> <a href="{{ content_url(resource.url) }}">"{{ resource.meta.title }}"</a> por <b>{{ resource.meta.author }}</b>, está licenciado bajo una <a href="http://creativecommons.org/licenses/by-sa/2.5/ar/">Creative Commons Atribución-CompartirDerivadasIgual 2.5 Argentina</a>.
+</div>
+{% endif %}

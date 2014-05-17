@@ -30,6 +30,12 @@
 {% endif %}
 {%- endmark %}
 
+<hr>
+
+{% if resource.meta.license %}
+{% include "license.j2" %} 
+{% endif %}
+
 <div class="meta-bottom">
 <p class="meta-post"><span class="lk">{{ t['permanent_link'] }}: <a href="{{ site.config.url_domain }}{{ content_url(resource.url) }}">{{ site.config.url_domain }}{{ content_url(resource.url) }}</a></span></p>
 <p class="meta-post">{{ t['published'] }} <span class="ap inline">{{ resource.meta.author }}</span> &mdash; <time class="inline" datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">{{ resource.meta.created.strftime('%d|%m|%Y') }}</time></p>

@@ -1,0 +1,976 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+:focus {
+    outline: 0;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+/* === header === */
+
+#barra-negra-logo {
+    background: url("/media/css/template_img/background.png") repeat-x scroll 0 1px transparent;
+    margin-top: 0; /* 80px */
+}
+
+#header-container {
+    background: url("/media/css/template_img/llamas.png") no-repeat scroll 0 bottom transparent;
+    /* position: relative; */
+    margin: 0 auto;
+    max-width: 1038px;
+}
+
+#logo-title {
+  display: none;
+}
+#logo-title img{
+    position: absolute;
+    top: -70px;
+    border: 0 none;
+}
+
+#dal-title {
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 0 197px;
+    padding: 100px 0 7px ;
+    max-width: 650px;
+    font-style: normal;
+}
+
+#site-name {
+    display: inline;
+/*    font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif',Georgia,Serif; */
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+#site-name > a, #dal-title > a {
+    color: inherit;
+}
+
+/* ========= HTML en general ========= */
+
+body {
+  font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif', Georgia, georgia, serif;
+  font-size: 14.3px; /* 13px; */
+  line-height: 1.7em;
+  background-color: #fff;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, p {
+ margin-bottom: 1em;
+}
+
+body#posts .content > h1.title {
+ display: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong, mark {
+}
+ul, ol {
+ padding-left: 1em;
+}
+
+pre, code {
+    font-family:  "Liberation Mono", "Andale Mono",monospace;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+pre {
+    border: 1px dotted gray;
+    padding: 13px 14px;
+    margin: 0 0 1.2em;
+}
+
+/* ========= LAYOUT ========= */
+
+.content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 10px 0 10px;
+}
+
+.biblio .content {
+  padding: 80px 20px 0 20px;
+}
+
+.content .listing, article.post { /* primer articulo */
+  /* margin-top: 80px; */
+}
+
+section.archives {
+  /* margin-top: 80px; */
+}
+
+.archive-title {
+    display: block;
+    margin: 11px 0 -7px;
+}
+
+
+/* ========= HEADER ========= */
+
+header .main_nav ul{
+    background-color: white;
+    list-style-type: none;
+    padding: 0.4em 0 0;
+    text-align: center;
+}
+
+header .main_nav ul li {
+    display: inline;
+    font-size: 1.9em;
+    font-style: italic;
+    margin: 0 0.1em;
+}
+
+
+header .main_nav ul li:before {
+}
+
+header .main_nav ul li:first-child:before {
+}
+
+
+header h1 {
+}
+
+/* ========= CONTENIDO html ========= */
+
+article h3, article h4{
+ font-size: 16px; /* 14px; */
+ margin-top: 2em;
+ font-weight: bold;
+}
+
+article h2 {
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 1.6em 0 0.6em;
+}
+
+article p, article li {
+ text-align: justify;
+ hyphens: auto;
+ -webkit-hyphens: auto;
+ -moz-hyphens: auto;
+}
+
+article blockquote p{
+  text-align: left;
+  hyphens: none;
+ -webkit-hyphens: none;
+ -moz-hyphens: none;
+}
+
+article .big-quote {
+    padding-right: 2em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+article .big-quote p {
+    hyphens: none;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: left;
+
+    color: gray;
+}
+
+article .big-quote p > span {
+   display: block;
+   font-size: 14.3px; /* 13px; */
+  /* text-align: right; */
+   font-style: normal;
+   margin-top: 1em;
+   color: black;
+}
+
+article .big-quote p > span.dquo {
+   display: inline;
+   font-size: inherit;
+   text-align: inherit;
+   font-style: inherit;
+}
+
+article center {
+    padding: 0.5em;
+    font-size: 15.4px; /* 14px; */
+    margin-bottom: 1em;
+    font-family: "Nimbus Sans L",Helvetica,Arial,Sans-serif;
+    color: #666666;
+}
+
+article p > big,
+article div.destacado > big {
+    border-bottom: 4px solid #DDDDDD;
+    border-top: 4px solid #DDDDDD;
+    color: #666666;
+    display: block;
+    float: left;
+    font-family: "Nimbus Sans L",Helvetica,Arial,Sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0.4em 1.5em 1em 0;
+    padding: 0.9em;
+    width: 272px;
+    clear: left;
+}
+
+article div.destacado.derecha > big {
+    float: right; clear: right;
+    margin: 0.4em 0 1em 1.5em;
+}
+
+article .destacado.solapar-6-lineas hr {height: 11.4em;}
+article .destacado.solapar-5-lineas hr {height: 9.8em;}
+article .destacado.solapar-4-lineas hr {height: 8em;}
+
+article .destacado hr {
+    float: left;
+    width: 1px;
+    border: none;
+    margin: 0; padding: 0;
+}
+
+article .destacado.derecha hr {
+    float: right;
+}
+
+article .destacado hr:last-child {
+    display: none;
+}
+
+article sup {
+    font-size: 0.7em;
+    margin-left: 0.3em;
+    vertical-align: text-top;
+}
+
+article strong, article b {
+   /*  text-decoration: underline;
+     font-weight: normal; */
+}
+
+article q {
+   font-style:italic;
+}
+
+article.post {
+}
+
+em > strong {
+   font-weight: normal;
+}
+
+h4, h5 {
+}
+
+b, strong, mark {
+}
+
+a {
+}
+
+p a {
+}
+
+p a:before {
+ /* content: "☞"; */
+}
+
+a:hover {
+}
+
+p a.img:before { content: ""; }
+a.img:hover { color: inherit; }
+
+li {
+   margin-bottom: 1em;
+   font-size: 1em;
+   line-height: 1.7em;
+}
+
+p {
+/* -webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto; */
+
+    font-size: 1em;
+    /* line-height: 1.6em; */
+}
+
+blockquote {
+    font-style: italic;
+    padding: 0.5em 0 0.5em 2em;
+}
+
+blockquote .autor-cita, blockquote .ac {
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 1.6em;
+    margin-top: 1.6em;
+}
+
+blockquote.big-quote {
+/*
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+*/
+    color: red;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.7em;
+    margin-bottom: 2em;
+}
+
+blockquote.big-quote p {
+    font-size: 15px;
+    line-height: 1.7em;
+}
+
+span.dquo {
+    color: inherit;
+    display: inline;
+    font-size: inherit;
+    text-align: left;
+}
+
+blockquote.big-quote .autor-quote, blockquote.big-quote .aq { /* es el autor de la cita! */
+    font-size: 12.1px; /* 11px; */
+    text-align: right;
+    display: block;
+    color: black;
+}
+
+.autor-quote-nombre, .an {
+}
+
+.descargar {
+    font-family: sans-serif;
+    font-size: 12.1px; /* 11px; */
+    font-weight: normal;
+    margin: -3em 0 2em;
+    text-decoration: none;
+}
+
+.descargar:before { 
+    content: " — "; 
+}
+
+article img {
+  margin: 1em 0;
+}
+
+
+.borde img {
+   border: 1px dotted gray;
+}
+
+article .recuadro {
+   display: block;
+   border: 1px dotted gray;
+   padding: 2em 1.5em;
+   margin: 2em 0 3em; 
+}
+
+.align-center {
+   text-align: center;
+}
+
+.centrar, .centrado {
+   display: block;
+   text-align: center;
+   margin: 2em 0 3em;
+}
+
+.marginado p, .marginado {
+   text-align: left;
+   hyphens: none;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+   
+}
+
+.bloque {
+ margin-top: 2em;
+ margin-bottom: 2em;
+}
+
+.bloque p {
+  hyphens: none;
+ -webkit-hyphens: none;
+ -moz-hyphens: none;
+ text-align: left;
+}
+
+article span.recuadro img {
+}
+
+.img80 img, .img-80 img { width: 80px;}
+.img100 img, .img-100 img { width: 100px;}
+.img120 img, .img-110 img{ width: 120px;}
+.img150 img, .img-150 img { width: 150px;}
+.img180 img, .img-180 img { width: 180px;}
+.img200 img, .img-200 img { width: 200px;}
+.img230 img, .img-230 img { width: 230px;}
+.img250 img, .img-250 img { width: 250px;}
+.img270 img, .img-270 img { width: 270px;}
+.img300 img, .img-300 img { width: 300px;}
+.img320 img, .img-320 img { width: 320px;}
+.img340 img, .img-340 img { width: 340px;}
+
+
+.imgfloat img, .imgfloat .ep, .imgfloat .epigrafe {
+    width: 100%;
+}
+
+.imgfloat {
+    float: left;
+    margin: 7px 31px 0 0;
+}
+
+.imgcenter img, .imgcenter .ep, .imgcenter .epigrafe {
+    width: 100%;
+}
+
+.imgcenter {
+    display: block;
+    margin: 3em auto;
+    width: 340px;
+}
+
+.w80 { width: 80px;}
+.w100 { width: 100px;}
+.w120{ width: 120px;}
+.w150 { width: 150px;}
+.w180 { width: 180px;}
+.w200 { width: 200px;}
+.w230 { width: 230px;}
+.w250 { width: 250px;}
+.w270 { width: 270px;}
+.w300 { width: 300px;}
+.w320 { width: 320px;}
+.w340 { width: 340px;}
+
+.img {
+  display: block;
+  padding: 0 2em;
+}
+
+.img img {
+  max-width: 100%;
+  margin: 0 auto 1em auto;
+  display: block;
+}
+
+.full img {
+  width: 100%;
+}
+
+img.med,
+.med img {
+  width: 50%;
+  float: left;
+  margin: 7px 31px 0 0;
+}
+
+.img-float, .float {
+  float: left;
+  margin: 7px 31px 0 0;
+}
+
+article .img-float img,
+article .float img {
+  margin: 0;
+}
+
+.pretitulo {
+    background: none repeat scroll 0 0 black;
+    color: white;
+    display: block;
+    font-family: "Liberation Mono","Andale Mono",monospace;
+    font-size: 15px;
+    margin: 4em 0 1em;
+    padding: 0 0.4em;
+}
+
+video {
+    max-width: 100%;
+}
+
+div.vimeo,
+div.youtube,
+div.video,
+div.audio {
+  margin: 3em 0 3em;
+}
+
+iframe {
+  /* margin: 0 40px 2em 40px; */
+}
+
+iframe.i640 {
+  margin: 0 0 3em 0;
+}
+
+.epigrafe, .ep {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5em;
+    margin: -0.8em 0 2em;
+}
+
+.bloque .ep {
+  margin-bottom: 1em; /* el bloque esta pensado para ser una foto mas un parrafo */
+}
+
+article > span, article > div {
+}
+
+
+article ul,
+article ol {
+  padding-left: 2em;
+}
+
+article li, {
+    text-align: left;
+    hyphens: none;
+}
+
+article ul li {
+    list-style-type: none;
+}
+
+article ul li:before { 
+    content: "— ";
+    margin-left: -1.25em;
+}
+
+/* nota= 1 columna: notas=2columnas*/
+
+div.notas, div.footnotes {
+   -moz-column-count: 2;
+   -moz-column-gap: 24px;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 24px;
+   column-count: 2;
+   column-gap: 24px;
+}
+
+.notas p, .notas li,
+.nota p, .nota li,
+div.footnotes {
+    font-size: 12.1px; /* 11px; */
+    line-height: 1.7em;
+}
+
+div.footnotes ol {
+    padding-left: 0;
+}
+div.footnotes ol li {
+   list-style-position: inside;
+}
+div.footnotes ol li p {
+   display: inline;
+}
+
+.notas ul, .nota ul,
+.notas ol, .nota ol {
+   padding-left: 0.8em;
+}
+
+.notas ul li:before, .nota ul li:before,
+div.footnotes ul li:before { 
+    content: "- ";
+    margin-left: -0.75em;
+}
+
+div.footnotes hr:first-child {
+    display:none;
+}
+
+.lista-corta li, .corto li {
+  margin-bottom: 0.3em;
+}
+
+hr {
+    margin: 3em auto 4em;
+    width: 39%;
+    /* margin: 3em auto; */
+}
+
+hr.post-bottom {
+    margin: 0 0 9px;
+    width: 100%;
+}
+
+.meta-bottom {
+  margin: 3em 0 5em;
+  clear: both;
+}
+
+.meta-bottom p,
+.meta-bottom ul
+.meta-bottom div {
+  text-align: left;
+}
+
+.licencia {
+    font-family: "Bitstream Vera Sans Mono","Courier New",monospace;
+    font-size: 0.75em;
+    line-height: 1.5em;
+}
+
+.licencia img, .licencia-general img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+/* ========= NODOS titulos  ========= */
+
+h1, h2 {
+}
+
+.title-excerpt, h1.title {
+  font-family: 'Nimbus Sans L', Helvetica, Arial, sans-serif;
+  font-size: 40.7px;
+  letter-spacing: -2.7px;
+  line-height: 39px;
+  width: 90%;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0 0 1em 0;
+}
+
+h1.tag.title {
+  font-family: 'Nimbus Sans L', Helvetica, Arial, sans-serif;
+  font-size: 31px;
+  letter-spacing: -2px;
+  line-height: 31px;
+}
+
+.title-excerpt a, h1.title a{
+ text-decoration: none;
+ color: black;
+}
+
+/* ========= NODOS elementos  ========= */
+
+article.excerpt {
+  margin-bottom: 90px;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.meta-post, .top-title {
+    font-family: "Liberation Mono", "Andale Mono", monospace;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+
+.top-title {
+  margin-bottom: -2px;
+  display: block;
+}
+
+time {
+}
+
+span.author-post, span.ap {
+}
+
+
+article ul.tags {
+    list-style-type: none;
+    margin: 0 0 2em;
+    padding: 0;
+}
+
+article ul.tags li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 6px 0 3px;
+}
+
+article ul.tags li:before { 
+    content: ""; 
+    margin: 0;
+}
+
+article ul.tags li a{
+  /* color: #b1293e; */
+ margin: 0 0 0 -3px;
+ color: 
+}
+
+.paginator {
+    display: block;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.paginator a {
+ margin: 0 5px;
+}
+
+a.prevlist:after {
+ content: " »";
+}
+
+a.nextlist:before {
+ content: "«";
+}
+
+
+time:before { /* content: "~ "; */}
+time:after { }
+
+time .dc {
+    font-size: 0.75em;
+}
+
+span.lk {
+    display: block;
+}
+
+.separador, .sep, .sp {
+    display: block;
+    margin: 2em auto 80px;
+    text-align: center;
+}
+
+.more {
+    display: block;
+    font-style: italic;
+    margin: 2em 0.2em 1.5em 0;
+    text-align: right;
+}
+
+a.more:after {
+ content: " »";
+}
+
+.post_nav {
+ margin-top: 80px;
+}
+
+nav.post_nav p{
+  font-style: italic;
+  margin: 0 0 7px 0;
+}
+
+nav.post_nav p.anterior:before {
+   content: "· ";
+}
+
+nav.post_nav p.siguiente:before {
+   content: "· ";
+}
+
+nav.post_nav p.volver:before {
+   content: "· ";
+}
+
+nav.post_nav p a:before{
+ content: "";
+}
+
+/* ========= BIBLIO ========= */
+
+.biblio h1.title {
+  margin: 0;
+}
+.biblio .author {
+  margin: 0.7em 0 2.5em;
+}
+.biblio .author-name {
+  font-style: italic;
+}
+.biblio .top-nav {
+  margin: 0 0 2.5em;
+}
+.biblio a.edit {
+    margin-top: 0;
+}
+article.biblio .main-text p {
+ text-indent: 1.5em;
+}
+article.biblio .main-text li {
+}
+
+.biblio .top-nav, .biblio a.edit {
+  color: #666666;
+  font-family: "Liberation Mono","Andale Mono",monospace;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* ========= FOOTER  ========= */
+footer{
+  font-size: 12px;
+  color: #ccc;
+}
+footer p {
+    font-style: italic;
+    text-align: center; 
+    text-indent: 0;
+    padding: 1em 0;
+    margin: 3em 0 0 0;
+    background-color: black;
+    color: white;
+}
+
+footer p a {
+ /* border-bottom: 2px dotted #555; */
+ color: white;
+}
+
+footer p a:before {
+}
+
+/* */
+
+a.edit {
+    display: block;
+    float: right;
+    margin-top: -1em;
+    text-align: right;
+    text-decoration: none;
+}
+
+/* ESPECIALES */
+
+/* pastillas del post cuevana /blog/2011/10/cuevana-7-hechos-y-7-peliculas.html */
+
+.pastilla {
+    padding: 1em 2em;
+    clear: both;
+}
+
+.pastilla-float {
+     float: left;
+    margin: 0 16px 0 0;
+    padding: 1em 0;
+    width: 300px;
+}
+
+.pastilla > p, .pastilla-float > p {
+    /* margin-left: 120px; */
+    text-align: left;
+    font-size: 12.1px; /* 11px; */
+    line-height: 1.7em;
+    hyphens: none;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+
+}
+
+.pastilla > p:first-child, .pastilla-float > p:first-child {
+    margin-bottom: 0px;
+}
+
+.pastilla img, .pastilla-float img {
+    float: left;
+    max-width: 110px;
+    /* margin: 5px 0 0 -120px; */
+    margin: 3px 11px 0 0;
+}
+
+
+/* */
+
+.fila-imagenes img {
+  margin: 0 1em;
+}
+
+/* */
+
+#rms {
+    font-size: 13px !important;
+    line-height: 16px !important;
+}
+
+#copyleft p {font-family: 'Courier New',courier,'Andale Mono','Nimbus Mono L',monospace;font-size: 56px;line-height: 45px;}
+#copyleft p a { color: black;text-decoration: none;}
+#copyleft p a:hover {color: white;}
+#copyleft p a:hover b {color: black;}
+#copyleft p a b {font-weight: normal; text-decoration: none;}
+
+/* juvia styles */
+
+.juvia-comment-content p,
+.juvia-comment-content li {
+  text-align: left;
+  font-family: "DejaVuSerif",'DejaVu Serif','Bitstream Vera Serif',Georgia,georgia,serif;
+  font-size: 12.1px;
+  line-height: 1.7em;
+  hyphens: none;
+ -webkit-hyphens: none;
+ -moz-hyphens: none;
+}
+
+/* Ballmer post */
+
+.ballmerlist p {
+    -moz-hyphens: none;
+    clear: left;
+    padding-top: 12px;
+    text-align: left;
+    width: 75%;
+}
+
+.ballmerlist .float img {
+    margin: -12px 0 0;
+}
