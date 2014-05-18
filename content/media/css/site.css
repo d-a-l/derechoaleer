@@ -556,13 +556,32 @@ iframe.i640 {
   margin: 0 0 3em 0;
 }
 
-.epigrafe, .ep {
+.img.usual {
+  padding: 0;
+  margin: 2.5em 0;
+}
+
+.epigrafe, .ep,
+.img.usual .epigrafe {
     display: block;
     font-size: 12px;
     font-style: italic;
     line-height: 1.5em;
     margin: -0.8em 0 2em;
     text-align: left;
+}
+
+.img.usual .epigrafe {
+    margin: 0;
+}
+
+
+
+.img.usual .epigrafe p { /* hack para anular el parrafo por defecto de markdown */
+    display: inline;
+    margin: 0; padding: 0;
+}
+.img.usual .epigrafe p.origen {
 }
 
 .bloque .ep {

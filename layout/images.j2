@@ -1,0 +1,17 @@
+{% macro usual(src, class="usual", alt="", href="", epigrafe="", autor="", origen="") %}
+
+<div class="img usual {{ class }}">
+{% if href != "" %}<a href="{{ href }}">{% endif %}
+<img src="{{ src }}" alr="{{ alt }}" />
+{% if href != "" %}</a>{% endif %}
+{% if epigrafe != "" %}
+   <div class="epigrafe">
+      {{ epigrafe|markdown2|typogrify }}
+      {% if origen != "" %}
+      <p class="origen">[<a href="{{ origen }}">{% if autor != "" %}{{ autor }}{% else %}fuente{% endif %}</a>]</p>
+      {% endif %}
+   </div>
+{% endif %}
+</div>
+
+{% endmacro %}
