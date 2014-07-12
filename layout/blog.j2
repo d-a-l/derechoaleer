@@ -7,10 +7,15 @@
 {% include "juvia.j2" %}
 {% endblock endhead %}
 
+{% block bodyclasses %}class="{{resource.meta.custom_body_classes}}"{% endblock bodyclasses %}
+
 {% block main -%}
 <article class="post">
+{#
 <a class="edit" rel="nofollow" title="edit in github" href="https://github.com/d-a-l/derechoaleer/blob/master/content{{ content_url(resource.url) }}" target="_blank">^</a>
 <a class="edit" rel="nofollow" title="edit in dal script" href="http://localdal/edit.php?nid={{ resource.meta.nid }}" target="_blank">^</a>
+#}
+
 <h1 class="title">
     <a href="{{ content_url(resource.url) }}">
         {{ resource.meta.title }}

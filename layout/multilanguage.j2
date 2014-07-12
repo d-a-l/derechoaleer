@@ -30,9 +30,33 @@
 {% endmacro %}
 
 
+{#
+https://duckduckgo.com/search_box
+http://patdryburgh.com/blog/adding-a-custom-duckduckgo-search-bar-to-your-site/
+https://duckduckgo.com/params
+#}
+{% macro get_searchbox(lang) -%}
+{% if lang == "es" %}
+<form method="get" id="search" action="http://duckduckgo.com/" style="float: right;">
+    <input type="hidden" name="sites" value="derechoaleer.org"/>
+    <input type="hidden" name="kl" value="ar-es"/>
+    <input type="hidden" name="kp" value="-1"/>
+    <input type="text" name="q" maxlength="255" placeholder="Buscar en derechoaleer.org"/>
+    <input type="submit" title="Buscar con DuckDuckGo!" value="Buscar" style="" />
+</form>
+{% else %}
+<form method="get" id="search" action="http://duckduckgo.com/" style="float: right;">
+    <input type="hidden" name="sites" value="derechoaleer.org"/>
+    <input type="hidden" name="kp" value="-1"/>
+    <input type="text" name="q" maxlength="255" placeholder="Search in derechoaleer.org"/>
+    <input type="submit" title="Search with DuckDuckGo!" value="Search" style="" />
+</form>
+{% endif %}
+{% endmacro %}
+
 {% macro get_footer_text(lang) -%}
 {% if lang == "en" %}
-Powered by <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Website code source</a> | Font <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
+<a href="/en/blog/contact-us.html">Contact Us</a> | <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a> | Powered by <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Website code source</a> | Font <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
 {% elif lang == "de" %}
 Angetrieben von <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Quelltext</a> | Schriftschnitt <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
 {% elif lang == "fr" %}
@@ -40,7 +64,7 @@ Propulsé par <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="http
 {% elif lang == "ca" %}
 Funciona amb <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Codi font</a> | Tipografia <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
 {% else %}
-Esta web fue generada por <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | Repositorio con el <a href="https://github.com/d-a-l/derechoaleer">código fuente del sitio</a> | Tipografía <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> | Licencia: <a href="http://creativecommons.org/licenses/by-sa/2.5/ar/">cc-by-sa</a>
+<a href="/blog/acerca-de.html">Acerca de</a> | <a href="/blog/contacto.html">Contacto</a> | Licencia: <a href="http://creativecommons.org/licenses/by-sa/2.5/ar/">cc-by-sa</a> | Generado en <a href="https://github.com/d-a-l/hyde">"Hyde"</a> | <a href="https://github.com/d-a-l/derechoaleer">Código fuente del sitio</a> | Tipografía <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a>
 {% endif %}
 {%- endmacro %}
 

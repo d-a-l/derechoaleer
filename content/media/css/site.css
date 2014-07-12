@@ -561,6 +561,17 @@ iframe.i640 {
   margin: 2.5em 0;
 }
 
+.img.usual.center {
+  text-align: center;
+}
+
+
+.img.usual .img-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 .epigrafe, .ep,
 .img.usual .epigrafe {
     display: block;
@@ -707,6 +718,10 @@ h1, h2 {
   font-style: normal;
   font-weight: bold;
   margin: 0 0 1em 0;
+}
+
+.long-title .title-excerpt, h1.title {
+  width: 100%;
 }
 
 h1.tag.title {
@@ -983,6 +998,26 @@ a.edit {
  -moz-hyphens: none;
 }
 
+
+
+.juvia-comment .juvia-avatar {
+    margin-left: -77px !important;
+    margin-top: -23px !important;
+}
+
+.juvia-avatar > img {
+    border: 1px solid #CCCCCC;
+    height: 36px;
+    width: 36px;
+}
+
+.juvia-comment .juvia-metadata {
+    margin-left: 92px !important;
+    background: none !important;
+    background-color: #DDDDDD !important;
+    padding: 9px !important;
+}
+
 /* Ballmer post */
 
 .ballmerlist p {
@@ -995,4 +1030,31 @@ a.edit {
 
 .ballmerlist .float img {
     margin: -12px 0 0;
+}
+
+#search-box {
+    position: fixed;
+    right: 0;
+}
+
+#search > input[type="text"] {
+    border: 3px solid #CCCCCC;
+    padding: 0 4px;
+    width: 185px;
+    height: 26px;
+}
+
+#search > input[type="submit"] {
+    border: 3px solid #000000;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+    background-image: url(/media/css/template_img/search.png);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    /* vertical-align: middle; */
 }

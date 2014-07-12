@@ -110,12 +110,13 @@
   {% endblock headjs %}
   {% block endhead %}{% endblock endhead %}
 </head>
-<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}" {% block bodyclasses %}{% endblock %} lang="{{ resource.meta.language }}">
+<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}" {% block bodyclasses %}{% endblock bodyclasses %} lang="{{ resource.meta.language }}">
   {% block content %}
   <div id="container">
       {% block container %}
-      <div id="main" role="main">
+      <div id="main" role="main" >
           <header class="banner clearfix">
+	  <div id="search-box">{{ m.get_searchbox(resource.meta.language) }}</div>
           {% block header -%}
 	    <div id="barra-negra-logo">
 	      <div id="header-container">{#
