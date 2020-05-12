@@ -30,6 +30,15 @@
 {% endmacro %}
 
 
+{% macro get_jsnotice(lang) -%}
+{% if lang == "es" %}
+<noscript><p>derechoaleer.org utiliza javascript para varias funciones del sitio (búsquedas, comentarios, etc), obtendrás una mejor experiencia si activas javascript en tu navegador.</p></noscript>
+{% else %}
+<noscript><p>derechoaleer.org uses javascript for several features of the site (search, comments, etc.), you'll get a better experience if you enable javascript in your browser.</p></noscript>
+{% endif %}
+{% endmacro %}
+
+
 {#
 https://duckduckgo.com/search_box
 http://patdryburgh.com/blog/adding-a-custom-duckduckgo-search-bar-to-your-site/

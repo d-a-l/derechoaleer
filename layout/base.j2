@@ -115,6 +115,7 @@
   <div id="container">
       {% block container %}
       <div id="main" role="main" >
+          <div id="js-notice">{{ m.get_jsnotice(resource.meta.language) }}</div>
           <header class="banner clearfix">
 	  <div id="search-box">{{ m.get_searchbox(resource.meta.language) }}</div>
           {% block header -%}

@@ -335,7 +335,6 @@ p {
 /* -webkit-hyphens: auto;
 -moz-hyphens: auto;
 hyphens: auto; */
-
     font-size: 1em;
     /* line-height: 1.6em; */
 }
@@ -633,6 +632,24 @@ div.notas, div.footnotes {
    -webkit-column-gap: 24px;
    column-count: 2;
    column-gap: 24px;
+}
+
+.footnotes-single div.footnotes {
+   padding-left: 21px;
+   -moz-column-count: 1;
+   -moz-column-gap: 24px;
+   -webkit-column-count: 1;
+   -webkit-column-gap: 24px;
+   column-count: 1;
+   column-gap: 24px;
+}
+
+.footnotes-single div.footnotes ol li p {
+    display: block;
+}
+
+.footnotes-single div.footnotes ol li {
+    list-style-position: outside;
 }
 
 .notas p, .notas li,
@@ -1057,4 +1074,34 @@ a.edit {
     height: 32px;
     width: 32px;
     /* vertical-align: middle; */
+}
+
+#js-notice p {
+    background-color: #FFFF00;
+    font-size: 13px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+/* twitter embebido */
+
+iframe.twitter-tweet.twitter-tweet-rendered {
+    margin-bottom: 40px !important;
+}
+
+blockquote.twitter-tweet { /* sin js */
+    padding-bottom: 2em;
+}
+
+/* resp */
+
+@media (max-width: 660px) {
+
+    section.content {
+        padding-left:20px; padding-right:20px;
+    }
+    article p, article li {
+        text-align: left;
+        hyphens: none;
+    }
 }

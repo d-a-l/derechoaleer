@@ -35,6 +35,9 @@ extends:
   RewriteRule ^2010/12/¡feliz-dia-del-dominio-publico.html$ /blog/2010/12/feliz-dia-del-dominio-publico.html [R=301,L]
   RewriteRule ^media/files/infocadra_baja_64.png$ /media/img/2013/cadra/infografia-estafa-cadra-uba-2013.png [R=301,L]
   RewriteRule ^images/2010/pdd-2010(.*).jpg$ http://derechoaleer.info/media/img/2010/pdd-2011$1.jpg [R=301,L]
+  RewriteRule ^acerca-de.html$ http://www.derechoaleer.org/blog/acerca-de.html [R=301,L]
+  RewriteRule ^blog/2015/04/feliz-dia-mundial-de-la-propiedad-intelectual-2014.html$ http://www.derechoaleer.org/blog/2015/04/feliz-dia-mundial-de-la-propiedad-intelectual-2015.html [R=301,L]
+
 
 
 # old to new links
